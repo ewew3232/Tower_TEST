@@ -4278,7 +4278,7 @@ Window_Message.prototype.createSubWindows = function() {
 };
 
 Window_Message.prototype.windowWidth = function() {
-    return Graphics.boxWidth;
+    return Graphics.boxWidth - 150 ;
 };
 
 Window_Message.prototype.windowHeight = function() {
