@@ -67,6 +67,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ■更新履歴
 
 2022/07/13 [体験版]（ver.0.10）
+2022/07/19 [体験版]（ver.0.11）
 
 ━━━━━━━━━━━━━━━━━━━━
 ■クレジット
@@ -77,62 +78,80 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ━━━━━━━━━━━━━━━━━━━━
 ■お借りした素材
 
-◇製作者:コミュ将 様
-・モブジェネレーター
+【イラスト素材】
+
+⇒製作者:コミュ将 様
 ​  Web :https://tm.lucky-duet.com/viewtopic.php?f=38&t=1712&sid=7306ef71dffb3b307b795856b4cdf7de
+・モブジェネレーター
 
-◇製作者:レティラナティス 様
-・子供用セーラー服
+⇒製作者:塩味のB 様
+  Web :https://tm.lucky-duet.com/viewtopic.php?f=38&t=5536&sid=080cab03d1025c2e6734fa8502322b78
+・短い前髪（SV・顔グラ有）
+  
+⇒製作者:レティラナティス 様
 ​  Web :https://tm.lucky-duet.com/viewtopic.php?t=3955
+・子供用セーラー服
 
-◇製作者:ヤナギユウ 様
+⇒製作者:ヤナギユウ 様
 ・プレミアム素材セット vol.1
 
-◇製作者:空維深夜 様
+⇒製作者:空維深夜 様
 ・プレミアム素材セット vol.2
+
+
+⇒製作者:空想曲線 様
+  Web :https://kopacurve.blog.fc2.com/
+・ウィンドウスキン
 
 【マップ素材】
 
-◇制作者:​HanapapaStudio 様
+⇒制作者:​HanapapaStudio 様
 ​  Web :https://tetsu0910a.wixsite.com/hanapapastudio
 ・SAMPLEMAP PLUS
 ・SAMPLEMAP PLUS2
 ・SAMPLEMAP PLUS 遺跡探索編
 
-◇製作者：ハルマキ(創作工房春巻) 様
+⇒製作者：ハルマキ(創作工房春巻) 様
   Web：http://harumakikukan.web.fc2.com/index.html
 ・HARUMAP
 
 
-◇製作者:名無シノ案山子 様
+⇒製作者:名無シノ案山子 様
 ・サンプルマップProject
 
-◇製作者:ノラ 様
+⇒製作者:ノラ 様
 ・ときめきマテリアル☆現代サンプルマップ
 
-◇製作者:あくた 様
-・黒い汎用敵キャラチップ
+⇒製作者:あくた 様
 ​  Web :https://tm.lucky-duet.com/viewtopic.php?f=4&t=512
+・黒い汎用敵キャラチップ
 
-◇製作者:コミュ将 様
-・昼の森、夜の森タイルセット
+⇒製作者:コミュ将 様
 ​  Web :https://tm.lucky-duet.com/viewtopic.php?f=15&t=2293&sid=b4a4e9aa1d412c938124e4ed2a439fe7
-
+・昼の森、夜の森タイルセット
 
 【モンスター素材】
 
-◇製作者:鳥橋Den 様
+⇒製作者:鳥橋Den 様
 ​  Web :https://torihasi.blog.fc2.com/
 
-◇製作者:氏家まさら 様
+⇒製作者:氏家まさら 様
 ​  Web :https://uzi-material.com/
 
-◇製作者:CLOSET 様
+⇒製作者:CLOSET 様
   Web :http://eurs.blog65.fc2.com/
+  
+
+【フォント】
+
+⇒製作者:神楽坂柚 様
+  Web :http://black-yuzunyan.lolipop.jp/
+ ・ゆず ポップ A [M] Bold
+
 
 【プラグイン】
 
-◇制作者:Yanfly 様
+⇒制作者:Yanfly 様
 ・YEP_AutoPassiveState
 ・YEP_BattleAICore
 ・YEP_CoreEngine
@@ -143,8 +162,11 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・YEP_VictorAftermath
 ・YEP_SkillCore
 
-◇制作者:トリアコンタン 様
+⇒制作者:トリアコンタン 様
+・AttackChain
 ・AutoBattle
+・BackUpDatabase
+・BattleEffectPopup
 ・BattleRecord
 ・CounterExtend
 ・MapNameExtend
@@ -152,21 +174,21 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・SubstituteExtend
 
 
-◇制作者:Yana 様
+⇒制作者:Yana 様
 ・CommonPopupCore
 ・GetInformation
 ・ItemStorage
 ・PassiveSkill
 ・StackBattleLog
 
-◇制作者:砂川赳 様
+⇒制作者:砂川赳 様
   Web :https://newrpg.seesaa.net/
 ・NRP_CombinationSkill
 ・NRP_DynamicAnimation
 ・NRP_DynamicMotion
 
 
-◇制作者:ルルの協会 様
+⇒制作者:ルルの協会 様
   Web :https://nine-yusha.com/
 ・LL_MenuScreenBaseMV
 ・LL_MenuScreenCustom
@@ -175,54 +197,66 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・LL_StandingPictureMV
 ・LL_StandingPictureBattleMV
 
-◇制作者:ヱビ 様
+⇒制作者:ヱビ 様
 ・AB_EnemyBook
 ・AB_EquipUpgrade
 
-◇制作者:cellicom 様
+⇒制作者:cellicom 様
 ・cellicom_RarityItemColor
 
-◇制作者:まっつUP 様
+⇒制作者:まっつUP 様
 ・DualattackTimes
 
-◇制作者:フトコロ 様
+⇒制作者:フトコロ 様
 ・FTKR_MessageWindowLines
 ・FTKR_SkillTreeSystem
 
-◇制作者:Zalerinian 様
+⇒制作者:Zalerinian 様
 ・Gamefocus
 
-◇制作者:Hime 様
+⇒制作者:Hime 様
 ・HIME_WindowBackgroundColors
 
-◇制作者:くらげや 様
+⇒制作者:くらげや 様
 ・KURAGE_SemiAutoDungeon
 
-◇制作者:マンカインド 様
+⇒制作者:マンカインド 様
 ・MKR_PlayerSensor
 
-◇制作者:panda 様 
+⇒制作者:panda 様 
   Web :werepanda.jp
 ・PANDA_ResetselfSwitches
 
-◇制作者:kido0617 様
+⇒制作者:kido0617 様
 ・RandomTreasure
 
-◇制作者:坂本昌一郎 / Shoichiro Sakamoto (sound sepher) 様
+⇒制作者:坂本昌一郎 / Shoichiro Sakamoto (sound sepher) 様
   Web ：http://sepher.jp/
 ・SSEP_BattleSpeedUp_v2
 
-◇制作者:tomoaky 様
+⇒制作者:tomoaky 様
 ・TMFollowerEx
 
-◇制作者:Ruたん(ru_Shalm) 様
+⇒制作者:Ruたん(ru_Shalm) 様
 ・Torigoya_Achivement2
+・Torigoya_FrameTween
+・Torigoya_SkillCutIN
 
-◇制作者:神無月サスケ 様
+⇒制作者:神無月サスケ 様
 ・WeaponSkill
 
-◇制作者:Yami 様
+⇒制作者:Yami 様
 ・Yami_8DIR
 
-◇制作者:kido 様
+⇒制作者:kido 様
 ・GetAllItems
+
+⇒制作者:Moghunter 様
+・MOG Battle Hud 
+・MOG - Battle Result 
+
+⇒制作者:Lunatlazur 様
+・Lunatlazur_ActorNameWindow
+
+⇒制作者:村人C 様
+・Reapeat_Skill
