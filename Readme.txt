@@ -1,9 +1,9 @@
 ■ゲームの概要
 
-【ゲームタイトル】Rottedflesh_Tower（仮）
-【バージョン　　】0.10
+【ゲームタイトル】Iana Gimi Ometto Bon
+【バージョン　　】0.11
 【ジャンル　　　】RPG
-【推奨年齢　　　】12歳以上
+【推奨年齢　　　】18歳以上
 【種別　　　　　】フリーウェア
 【制作ソフト　　】RPGツクールMV
 【ゲーム制作者　】おんおん(Rotted Flesh)
@@ -34,7 +34,7 @@
 ③当ソフトの実況プレイ及び二次創作は、原則事前連絡不要で許可します。
 ただし、動画説明欄または二次創作物に下記事項を必ず明記してください。
 
-『Rottedflesh_Tower（仮）』の制作者
+『Iana Gimi Ometto Bon』の制作者
 作者名:おんおん
 Webサイト:https://ci-en.dlsite.com/creator/11451
 
