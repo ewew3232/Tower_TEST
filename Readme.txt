@@ -173,6 +173,14 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・SceneGlossary
 ・SubstituteExtend
 
+⇒制作者:ルルの協会 様
+  Web :https://nine-yusha.com/
+・LL_MenuScreenBaseMV
+・LL_MenuScreenCustom
+・LL_MenuScreenShopMV
+・LL_SprashScreenMV
+・LL_StandingPictureMV
+・LL_StandingPictureBattleMV
 
 ⇒制作者:Yana 様
 ・CommonPopupCore
@@ -187,29 +195,30 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・NRP_DynamicAnimation
 ・NRP_DynamicMotion
 
+⇒制作者:Moghunter 様
+・MOG Battle Hud 
+・MOG - Battle Result 
+・MOG - Title Picture Commands 
+・MOG - Title Particles 
 
-⇒制作者:ルルの協会 様
-  Web :https://nine-yusha.com/
-・LL_MenuScreenBaseMV
-・LL_MenuScreenCustom
-・LL_MenuScreenShopMV
-・LL_SprashScreenMV
-・LL_StandingPictureMV
-・LL_StandingPictureBattleMV
+⇒制作者:Ruたん(ru_Shalm) 様
+・Torigoya_Achivement2
+・Torigoya_FrameTween
+・Torigoya_SkillCutIN
 
 ⇒制作者:ヱビ 様
 ・AB_EnemyBook
 ・AB_EquipUpgrade
+
+⇒制作者:フトコロ 様
+・FTKR_MessageWindowLines
+・FTKR_SkillTreeSystem
 
 ⇒制作者:cellicom 様
 ・cellicom_RarityItemColor
 
 ⇒制作者:まっつUP 様
 ・DualattackTimes
-
-⇒制作者:フトコロ 様
-・FTKR_MessageWindowLines
-・FTKR_SkillTreeSystem
 
 ⇒制作者:Zalerinian 様
 ・Gamefocus
@@ -237,11 +246,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒制作者:tomoaky 様
 ・TMFollowerEx
 
-⇒制作者:Ruたん(ru_Shalm) 様
-・Torigoya_Achivement2
-・Torigoya_FrameTween
-・Torigoya_SkillCutIN
-
 ⇒制作者:神無月サスケ 様
 ・WeaponSkill
 
@@ -250,10 +254,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:kido 様
 ・GetAllItems
-
-⇒制作者:Moghunter 様
-・MOG Battle Hud 
-・MOG - Battle Result 
 
 ⇒制作者:Lunatlazur 様
 ・Lunatlazur_ActorNameWindow
