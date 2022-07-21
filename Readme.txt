@@ -68,6 +68,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 2022/07/13 [体験版]（ver.0.10）
 2022/07/19 [体験版]（ver.0.11）
+2022/07/21 [体験版]（ver.0.12）
 
 ━━━━━━━━━━━━━━━━━━━━
 ■クレジット
@@ -98,11 +99,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒製作者:空維深夜 様
 ・プレミアム素材セット vol.2
 
-
-⇒製作者:空想曲線 様
-  Web :https://kopacurve.blog.fc2.com/
-・ウィンドウスキン
-
 【マップ素材】
 
 ⇒制作者:​HanapapaStudio 様
@@ -114,7 +110,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒製作者：ハルマキ(創作工房春巻) 様
   Web：http://harumakikukan.web.fc2.com/index.html
 ・HARUMAP
-
 
 ⇒製作者:名無シノ案山子 様
 ・サンプルマップProject
@@ -140,7 +135,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒製作者:CLOSET 様
   Web :http://eurs.blog65.fc2.com/
-  
 
 【フォント】
 
@@ -148,8 +142,19 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
   Web :http://black-yuzunyan.lolipop.jp/
  ・ゆず ポップ A [M] Bold
 
-
 【プラグイン】
+
+⇒制作者:Moghunter 様
+・MOG Battle Hud 
+・MOG - Battle Result 
+・MOG - Scene Equip
+・MOG - Scene File 
+・MOG - Scene Item
+・MOG - Scene Menu
+・MOG - Scene Skill
+・MOG - Scene Status
+・MOG - Title Picture Commands 
+・MOG - Title Particles 
 
 ⇒制作者:Yanfly 様
 ・YEP_AutoPassiveState
@@ -173,15 +178,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・SceneGlossary
 ・SubstituteExtend
 
-⇒制作者:ルルの協会 様
-  Web :https://nine-yusha.com/
-・LL_MenuScreenBaseMV
-・LL_MenuScreenCustom
-・LL_MenuScreenShopMV
-・LL_SprashScreenMV
-・LL_StandingPictureMV
-・LL_StandingPictureBattleMV
-
 ⇒制作者:Yana 様
 ・CommonPopupCore
 ・GetInformation
@@ -189,17 +185,19 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・PassiveSkill
 ・StackBattleLog
 
+⇒制作者:ルルの協会 様
+  Web :https://nine-yusha.com/
+・LL_MenuScreenBaseMV
+・LL_MenuScreenShopMV
+・LL_SprashScreenMV
+・LL_StandingPictureMV
+・LL_StandingPictureBattleMV
+
 ⇒制作者:砂川赳 様
   Web :https://newrpg.seesaa.net/
 ・NRP_CombinationSkill
 ・NRP_DynamicAnimation
 ・NRP_DynamicMotion
-
-⇒制作者:Moghunter 様
-・MOG Battle Hud 
-・MOG - Battle Result 
-・MOG - Title Picture Commands 
-・MOG - Title Particles 
 
 ⇒制作者:Ruたん(ru_Shalm) 様
 ・Torigoya_Achivement2
