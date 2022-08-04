@@ -519,7 +519,7 @@
 		Scene_MenuBase.prototype.initialize.call(this);
 		var actors = $gameParty.members();
 		actors.forEach(function(actor){
-			ImageManager.loadFace(actor.faceName());
+			//ImageManager.loadFace(actor.faceName());
 		});
 	};
 
@@ -531,7 +531,7 @@
 
 	Scene_EquipUpgradeSelectActor.prototype.createStatusWindow = function() {
 		this._statusWindow = new Window_MenuStatus(0, 0);
-		this._statusWindow.reserveFaceImages();
+		//this._statusWindow.reserveFaceImages();
 		this.addWindow(this._statusWindow);
 		this._statusWindow.setHandler('ok', this.onPersonalOk.bind(this));
 		this._statusWindow.setHandler('cancel', this.popScene.bind(this));

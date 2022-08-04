@@ -1,24 +1,25 @@
-//=============================================================================
-// MOG_BattleHud.js   -   (Template 11)
-//=============================================================================
+//============================================================================
+// MOG_BattleHud.js   -   (Template 02)
+// Translate to Japanese : fungamemake.com
+//============================================================================
 
 /*:
- * @plugindesc (v5.04 *) Permite customizar o layout de batalha.
+ * @plugindesc (v5.04f *) Permite customizar o layout de batalha.
  * @author Moghunter
  *
  * @param -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
  * @desc
- * 
+ *
  * @param Hud X-Axis
  * @text X-Axis
  * @desc Definição da posição X-Axis da Hud.
- * @default -90
+ * @default 90
  * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Hud Y-Axis
  * @text Y-Axis
  * @desc Definição da posição Y-Axis da Hud.
- * @default 480
+ * @default 460
  * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Hud Space X
@@ -42,35 +43,35 @@
  * @param Hud Slide Y
  * @text Slide Animation Y
  * @desc Deslizar Y-Axis.
- * @default 250
+ * @default 0
  * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param Vertical Mode
  * @desc Deixar a Hud na posição vertical.
- * @default false 
+ * @default false
  * @type boolean
  * @on Vertical Mode
- * @off Horizontal Mode 
+ * @off Horizontal Mode
  * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Max Battle Members
  * @desc Quantidade de maxima de battler na batalha.
  * @type number
- * @min 1 
+ * @min 1
  * @default 4
  * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param Layout2 Visible
  * @text Visible
- * @desc Ativar o segunda imagem do layout, esta imagem 
+ * @desc Ativar o segunda imagem do layout, esta imagem
  * ficará acima das faces e medidores.
- * @default true
- * @type boolean 
+ * @default false
+ * @type boolean
  * @parent -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Layout2 X-Axis
@@ -86,9 +87,9 @@
  * @parent -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> TURN <<<<<<<<<<<<<<<<<<<<<<<
- * @desc  
+ * @desc
  *
  * @param Turn Visible
  * @text Visible
@@ -100,73 +101,73 @@
  * @param Turn X-Axis
  * @text X-Axis
  * @desc Definição da posição X-Axis do turno.
- * @default -10
+ * @default 0
  * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Turn Y-Axis
  * @text Y-Axis
  * @desc Definição da posição Y-Axis do turno.
- * @default -10
+ * @default 0
  * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Turn Rotation Speed
  * @text Rotation Animation Speed
  * @desc Definição da velocidade de rotação da imagem.
- * @default 0.01
+ * @default 0
  * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Turn Zoom Animation
  * @text Zoom Animation
  * @desc Ativar a animação de zoom ao ativar.
- * @default true
- * @type boolean 
+ * @default false
+ * @type boolean
  * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> FACE <<<<<<<<<<<<<<<<<<<<<<<
- * @desc  
+ * @desc
  *
  * @param Face Visible
  * @text Visible
  * @desc Apresentar a imagem da face.
  * @default true
- * @type boolean 
+ * @type boolean
  * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Face X-Axis
  * @text X-Axis
  * @desc Definição da posição X-Axis da face.
- * @default 52
+ * @default 54
  * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Face Y-Axis
  * @text Y-Axis
  * @desc Definição da posição Y-Axis da face.
- * @default 52
- * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 16
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Face Shake Animation
  * @text Shake Animation
  * @desc Ativar animação de tremer da face.
  * @default true
- * @type boolean 
- * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<< 
+ * @type boolean
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Face Zoom Animation
  * @text Zoom Animation
  * @desc Ativar animação de zoom de ação.
  * @default true
- * @type boolean 
- * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<< 
+ * @type boolean
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Face Frame Animation
  * @text Animated (Frames)
  * @desc Ativar animação por frames.
  *       É necessário dividir a imagem por 5.
- * @default true
- * @type boolean 
- * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default false
+ * @type boolean
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Face Priority
  * @text Priority
@@ -176,32 +177,32 @@
  * @value 0
  * @option High (Above of Gauge)
  * @value 1
- * @default 0
- * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 1
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> NAME <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param Name Visible
  * @text Visible
  * @desc Apresentar o nome do personagem.
  * @default true
- * @type boolean 
+ * @type boolean
  * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Name X-Axis
  * @text X-Axis
  * @desc Definição da posição X-Axis do nome.
- * @default -45
- * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 70
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Name Y-Axis
  * @text Y-Axis
  * @desc Definição da posição Y-Axis do nome.
- * @default 65
- * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default -7
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Name Align
  * @text Text Alignment
@@ -213,73 +214,73 @@
  * @option Center
  * @value 1
  * @option Right
- * @value 2 
- * @default 1
- * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<< 
+ * @value 2
+ * @default 0
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Name Font Size
  * @text Font Size
  * @desc Definição do tamanho da fonte do nome.
  * @default 20
- * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Name Bold Size
  * @text Bold Size
  * @desc Definição do tamanho do contorno.
  * @default 4
- * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Name Font Italic
  * @text Font Italic
  * @desc Ativar fonte em itálico.
  * @default false
- * @type boolean 
- * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<< 
+ * @type boolean
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> HP <<<<<<<<<<<<<<<<<<<<<<<
- * @desc  
- * 
+ * @desc
+ *
  * @param HP Meter Visible
  * @text Gauge Visible
  * @desc Apresentar o medidor de HP
  * @default true
- * @type boolean 
+ * @type boolean
  * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Meter X-Axis
  * @text Gauge X-Axis
  * @desc Definição da posição X-Axis do medidor de HP.
- * @default 87
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 164
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Meter Y-Axis
  * @text Gauge Y-Axis
  * @desc Definição da posição Y-Axis do medidor de HP.
- * @default 7
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 21
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Meter Angle
  * @text Gauge Angle
  * @desc Ángulo do medidor.
  * @default 0
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Meter Flow Anime
  * @text Gradient Animation
  * @desc Ativar animação de gradiente no medidor.
  * É necessário que a imagem tenha 3x a largura do medidor.
  * @default true
- * @type boolean 
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @type boolean
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Number Visible
  * @text Number Visible
  * @desc Apresentar o numero de HP
  * @default true
- * @type boolean 
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @type boolean
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Number Align type
  * @text Number Alignment
@@ -295,41 +296,41 @@
  * @option Diagonal
  * @value 3
  * @default 0
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
- * 
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
  * @param HP Number X-Axis
  * @text Number X-Axis
  * @desc Definição da posição X-Axis do numero de HP.
- * @default 170
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 265
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param HP Number Y-Axis
  * @text Number Y-Axis
  * @desc Definição da posição Y-Axis do numero de HP.
- * @default -11
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
- * 
+ * @default 0
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
  * @param MaxHP Number Visible
  * @text Max HP Visible
  * @desc Apresentar o numero de HP maximo.
  * @default false
  * @type boolean
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxHP Number X-Axis
  * @text Max HP X-Axis
  * @desc Definição da posição X-Axis do numero de HP maximo.
- * @default 0
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 185
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxHP Number Y-Axis
  * @text Max HP Y-Axis
  * @desc Definição da posição Y-Axis do numero de HP maximo.
- * @default 0
- * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 40
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> MP <<<<<<<<<<<<<<<<<<<<<<<
  * @desc
  *
@@ -343,20 +344,20 @@
  * @param MP Meter X-Axis
  * @text Gauge X-Axis
  * @desc Definição da posição X-Axis do medidor de MP.
- * @default 104
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 297
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MP Meter Y-Axis
  * @text Gauge Y-Axis
  * @desc Definição da posição Y-Axis do medidor de MP.
- * @default 33
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 21
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MP Meter Angle
  * @text Gauge Angle
  * @desc Ángulo do medidor.
  * @default 0
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MP Meter Flow Anime
  * @text Gradient Animation
@@ -364,14 +365,14 @@
  * É necessário que a imagem tenha 3x a largura do medidor.
  * @default true
  * @type boolean
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MP Number Visible
  * @text Number Visible
  * @desc Apresentar o numero de MP
  * @default true
  * @type boolean
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MP Number Align type
  * @text Number Alignment
@@ -387,43 +388,43 @@
  * @option Diagonal
  * @value 3
  * @default 0
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
- * 
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
  * @param MP Number X-Axis
  * @text Number X-Axis
  * @desc Definição da posição X-Axis do numero de MP.
- * @default 187
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 397
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MP Number Y-Axis
  * @text Number Y-Axis
  * @desc Definição da posição Y-Axis do numero de MP.
- * @default 26
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 0
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxMP Number Visible
  * @text Max MP Visible
  * @desc Apresentar o numero de MP maximo.
  * @default false
  * @type boolean
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxMP Number X-Axis
  * @text Max HP X-Axis
  * @desc Definição da posição X-Axis do numero de MP maximo.
- * @default 0
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 196
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxMP Number Y-Axis
  * @text Max HP Y-Axis
  * @desc Definição da posição Y-Axis do numero de MP maximo.
- * @default 0
- * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 78
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> TP <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param TP Meter Visible
  * @text Gauge Visible
@@ -435,13 +436,13 @@
  * @param TP Meter X-Axis
  * @text Gauge X-Axis
  * @desc Definição da posição X-Axis do medidor de TP.
- * @default 104
+ * @default 420
  * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param TP Meter Y-Axis
  * @text Gauge Y-Axis
  * @desc Definição da posição Y-Axis do medidor de TP.
- * @default 59
+ * @default 21
  * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param TP Meter Angle
@@ -484,13 +485,13 @@
  * @param TP Number X-Axis
  * @text Number X-Axis
  * @desc Definição da posição X-Axis do numero de TP.
- * @default 187
+ * @default 520
  * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param TP Number Y-Axis
  * @text Number Y-Axis
  * @desc Definição da posição Y-Axis do numero de TP.
- * @default 43
+ * @default 0
  * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxTP Number Visible
@@ -503,19 +504,19 @@
  * @param MaxTP Number X-Axis
  * @text Max TP X-Axis
  * @desc Definição da posição X-Axis do numero de TP maximo.
- * @default 0
+ * @default 175
  * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param MaxTP Number Y-Axis
  * @text Max TP Y-Axis
  * @desc Definição da posição Y-Axis do numero de TP maximo.
- * @default 0
+ * @default 99
  * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> ATB <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param ATB Meter Visible
  * @text Gauge Visible
@@ -527,13 +528,13 @@
  * @param ATB Meter X-Axis
  * @text Gauge X-Axis
  * @desc Definição da posição X-Axis do medidor de ATB.
- * @default 69
+ * @default 0
  * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param ATB Meter Y-Axis
  * @text Gauge Y-Axis
  * @desc Definição da posição Y-Axis do medidor de ATB.
- * @default 117
+ * @default 32
  * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param ATB Meter Angle
@@ -546,14 +547,14 @@
  * @text Gradient Animation
  * @desc Ativar animação de gradiente no medidor.
  * É necessário que a imagem tenha 3x a largura do medidor.
- * @default true
+ * @default false
  * @type boolean
  * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> STATES <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param States Visible
  * @text Visible
@@ -565,14 +566,14 @@
  * @param States X-Axis
  * @text X-Axis
  * @desc Definição da posição X-Axis das condições.
- * @default 102
- * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 532
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param States Y-Axis
  * @text Y-Axis
  * @desc Definição da posição Y-Axis das condições.
- * @default 76
- * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<< 
+ * @default 0
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param States Mode
  * @text View Mode
@@ -582,17 +583,17 @@
  * @option Timing Mode (Show one state for second)
  * @value 0
  * @option Line Mode (Show all states)
- * @value 1 
+ * @value 1
  * @default 0
- * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param States Max
  * @text Max number of states
  * @desc Quantidade maxima de ícones apresentados.
  * @type number
- * @min 1 
+ * @min 1
  * @default 4
- * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param States Align
  * @text Alignment
@@ -606,15 +607,15 @@
  * @option Upper
  * @value 2
  * @option Below
- * @value 3 
+ * @value 3
  * @default 0
- * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<< 
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
  * @text -> Window Command <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param Command Auto Adjust
  * @text Position Mode
@@ -625,19 +626,19 @@
  * @value 0
  * @option Static
  * @value 1
- * @default 0
+ * @default 1
  * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Command X-Axis
  * @text X-Axis
  * @desc Definição do posição X-axis do comando.
- * @default 0
+ * @default 15
  * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Command Y-Axis
  * @text Y-Axis
  * @desc Definição do posição Y-axis do comando.
- * @default -15
+ * @default 440
  * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Command Width
@@ -661,9 +662,9 @@
  * @param W Command Slide Y
  * @text Slide Animation Y
  * @desc Animação de slide Y-Axis.
- * @default 64
+ * @default 0
  * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param Layout Command
  * @text Layout (Picture)
  * @desc Ativar a imagem de layout.
@@ -684,10 +685,10 @@
  * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
  * @text -> Window Party <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param W Party X-Axis
  * @text X-Axis
@@ -722,7 +723,7 @@
  * @param W Party Slide Y
  * @text Slide Animation Y
  * @desc Animação de Slide Y-Axis.
- * @default -100
+ * @default 0
  * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Layout Party
@@ -745,10 +746,10 @@
  * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
  * @text -> Window Help <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param W Help X-Axis
  * @text X-Axis
@@ -783,7 +784,7 @@
  * @param W Help Slide Y
  * @text Slide Animation Y
  * @desc Animação de Slide Y-Axis.
- * @default -50
+ * @default 0
  * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Layout Help
@@ -806,10 +807,10 @@
  * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
- * @text -> Window Skill <<<<<<<<<<<<<<<<<<<<<<< 
- * @desc 
+ * @text -> Window Skill <<<<<<<<<<<<<<<<<<<<<<<
+ * @desc
  *
  * @param W Skill X-Axis
  * @text X-Axis
@@ -818,19 +819,19 @@
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Skill Y-Axis
- * @text Y-Axis 
+ * @text Y-Axis
  * @desc Definição do posição Y-axis do janela.
  * @default 444
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Skill Width
- * @text Width 
+ * @text Width
  * @desc Definição da largura da janela.
  * @default 816
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Skill Height
- * @text Height 
+ * @text Height
  * @desc Definição da altura da janela.
  * @default 180
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
@@ -839,7 +840,7 @@
  * @text Max Columns
  * @desc Definição da quantidade de colunas da janela.
  * @type number
- * @min 1 
+ * @min 1
  * @default 2
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
  *
@@ -848,13 +849,13 @@
  * @desc Animação de Slide X-Axis.
  * @default 0
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param W Skill Slide Y
  * @text Slide Animation Y
  * @desc Animação de Slide Y-Axis.
- * @default 50
+ * @default 0
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param Layout Skill
  * @text Layout (Picture)
  * @desc Ativar a imagem de layout.
@@ -875,11 +876,11 @@
  * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
- * @text -> Window Item <<<<<<<<<<<<<<<<<<<<<<< 
- * @desc 
- * @default  
+ * @text -> Window Item <<<<<<<<<<<<<<<<<<<<<<<
+ * @desc
+ * @default
  *
  * @param W Item X-Axis
  * @text X-Axis
@@ -909,12 +910,12 @@
  * @text Max Columns
  * @desc Definição da quantidade de colunas da janela.
  * @type number
- * @min 1 
+ * @min 1
  * @default 2
  * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Item Slide X
- * @text Slide Animation X 
+ * @text Slide Animation X
  * @desc Animação de Slide X-Axis.
  * @default 0
  * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
@@ -922,9 +923,9 @@
  * @param W Item Slide Y
  * @text Slide Animation Y
  * @desc Animação de Slide Y-Axis.
- * @default 50
+ * @default 0
  * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param Layout Item
  * @text Layout (Picture)
  * @desc Ativar a imagem de layout.
@@ -945,10 +946,10 @@
  * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
- * @text -> Window Actor <<<<<<<<<<<<<<<<<<<<<<< 
- * @desc 
+ * @text -> Window Actor <<<<<<<<<<<<<<<<<<<<<<<
+ * @desc
  *
  * @param W Actor X-Axis
  * @text X-Axis
@@ -978,7 +979,7 @@
  * @text Max Columns
  * @desc Definição da quantidade de colunas da janela.
  * @type number
- * @min 1 
+ * @min 1
  * @default 1
  * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
  *
@@ -991,9 +992,9 @@
  * @param W Actor Slide Y
  * @text Slide Animation Y
  * @desc Animação de Slide Y-Axis.
- * @default 50
+ * @default 0
  * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param Layout Actor
  * @text Layout (Picture)
  * @desc Ativar a imagem de layout.
@@ -1014,10 +1015,10 @@
  * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
- * @text -> Window Enemy <<<<<<<<<<<<<<<<<<<<<<< 
- * @desc 
+ * @text -> Window Enemy <<<<<<<<<<<<<<<<<<<<<<<
+ * @desc
  *
  * @param W Enemy X-Axis
  * @text X-Axis
@@ -1026,7 +1027,7 @@
  * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param W Enemy Y-Axis
- * @text Y-Axis 
+ * @text Y-Axis
  * @desc Definição do posição Y-axis do janela.
  * @default 444
  * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
@@ -1047,7 +1048,7 @@
  * @text Max Columns
  * @desc Definição da quantidade de colunas da janela.
  * @type number
- * @min 1 
+ * @min 1
  * @default 2
  * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
  *
@@ -1060,9 +1061,9 @@
  * @param W Enemy Slide Y
  * @text Slide Animation Y
  * @desc Animação de Slide Y-Axis.
- * @default 50
+ * @default 0
  * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
- * 
+ *
  * @param Layout Enemy
  * @text Layout (Picture)
  * @desc Ativar a imagem de layout.
@@ -1083,9 +1084,9 @@
  * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param Screen Layout
  * @text Visible
@@ -1101,50 +1102,50 @@
  * @parent -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Screen Y-Axis
- * @text Y-Axis 
+ * @text Y-Axis
  * @desc Definição do posição Y-axis da imagem.
  * @default 0
  * @parent -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param
- * 
+ *
  * @param -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
- * @desc 
+ * @desc
  *
  * @param Custom Position 1
  * @desc Definição da posição da hud.
  * Ex -     200,200
- * @default
+ * @default 220,450
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Custom Position 2
  * @desc Definição da posição da hud.
  * Ex -     200,200
- * @default
+ * @default 220,495
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Custom Position 3
  * @desc Definição da posição da hud.
  * Ex -     200,200
- * @default
+ * @default 220,540
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Custom Position 4
  * @desc Definição da posição da hud.
  * Ex -     200,200
- * @default
+ * @default 220,585
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Custom Position 5
  * @desc Definição da posição da hud.
  * Ex -     200,200
- * @default
+ * @default 220,630
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Custom Position 6
  * @desc Definição da posição da hud.
  * Ex -     200,200
- * @default
+ * @default 220,675
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Custom Position 7
@@ -1159,17 +1160,17 @@
  * @default
  * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
  *
- * @help  
- * =============================================================================
- * +++ MOG_BattleHud (v5.04) +++
+ * @help
+ * ============================================================================
+ * +++ MOG_BattleHud (v5.04f) +++
  * By Moghunter
  * https://atelierrgss.wordpress.com/
- * =============================================================================
+ * ============================================================================
  * O plugin permite customizar o layout de batalha.
  *
- * =============================================================================
+ * ============================================================================
  * - REQUIRED FILES
- * ============================================================================= 
+ * ============================================================================
  * Serão necessários os arquivos. (img/battlehud/)
  *
  * ->  HP_Meter.png
@@ -1190,7 +1191,7 @@
  * ->  Layout_Skill.png
  * ->  Turn.png
  *
- * =============================================================================
+ * ============================================================================
  * Para nomear as faces dos battlers basta nomear da seguinte forma.
  *
  * Face_ + ACTOR_ID.png
@@ -1200,27 +1201,27 @@
  * Face_3.png
  * ...
  *
- * =============================================================================
+ * ============================================================================
  * - NOTETAGS
- * =============================================================================
+ * ============================================================================
  * Para ativar o efeito de respirar nas faces utilize a notetag abaixo
  *
  * Face Breath Effect
  *
- * =============================================================================
+ * ============================================================================
  * - PLUGIN COMMANDS
- * ============================================================================= 
+ * ============================================================================
  * Para ocultar a hud use o comando abaixo.
  *
  *     bhud_disable
- * 
+ *
  * Para apresentar a hud use o comando abaixo
  *
- *     bhud_enable 
+ *     bhud_enable
  *
- * =============================================================================
+ * ============================================================================
  * - SCRIPT COMMANDS
- * ============================================================================= 
+ * ============================================================================
  * Para ocultar a hud use o comando abaixo.
  *
  *     $gameSystem._bhud_visible = false
@@ -1228,26 +1229,1486 @@
  * Para apresentar a hud use o commando abaixo.
  *
  *     $gameSystem._bhud_visible = true
- *  
- * ============================================================================
+ *
+ * ===========================================================================
  * - WHAT'S  NEW
- * ============================================================================
- * - (version 5.04) 
- * (BUG FIX) - Correção de não apresentar a face correta no inicio da batalha 
- *             caso o personagem seja abatido na batalha anterior. 
+ * ===========================================================================
+ * - (version 5.04f)
+ * (BUG FIX) - Exibição correta da posição geral da animação nas batalhas da
+ *             vista frontal.
+ * (BUG FIX) - Correção de não apresentar a face correta no inicio da batalha
+ *             caso o personagem seja abatido na batalha anterior.
  *
  */
- 
-//=============================================================================
+
+/*:ja
+ * @plugindesc (v5.04f *) 戦闘のレイアウトをカスタマイズできます。
+ * @author Moghunter
+ *
+ * @param -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> HUD全般 <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Hud X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 90
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Hud Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 460
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Hud Space X
+ * @text X軸間隔
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Hud Space Y
+ * @text Y軸間隔
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Hud Slide X
+ * @text X軸スライド量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Hud Slide Y
+ * @text Y軸スライド量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Vertical Mode
+ * @text 並べ方
+ * @default false
+ * @type boolean
+ * @on 縦モード
+ * @off 水平モード
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Max Battle Members
+ * @text 戦闘の最大参加人数
+ * @type number
+ * @min 1
+ * @max 9007
+ * @default 4
+ * @parent -> MAIN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> レイアウト2(上レイヤー) <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout2 Visible
+ * @text レイアウト2の表示
+ * @desc 顔、ゲージの上レイヤーに表示
+ * @default false
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout2 X-Axis
+ * @text HUDのX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout2 Y-Axis
+ * @text HUDのY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> LAYOUT OVERLAY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> TURN <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> ターン画像 <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Turn Visible
+ * @text 表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Turn X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Turn Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Turn Rotation Speed
+ * @text 回転速度
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @decimals 2
+ * @default 0
+ * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Turn Zoom Animation
+ * @text 拡大アニメーション有効
+ * @default false
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> TURN <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> 顔画像 <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face Visible
+ * @text 表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face X-Axis
+ * @text X軸位置
+ * @default 54
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 16
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face Shake Animation
+ * @text 振動アニメーションの有効化
+ * @default true
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face Zoom Animation
+ * @text 拡大アニメーションの有効化
+ * @default true
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face Frame Animation
+ * @text フレーム有効化
+ * @desc 顔画像フレーム有効化。画像が5分割されます。左から 待機時 / HP回復時 / 行動時 / 被ダメージ時・瀕死時 / 戦闘不能時
+ * @default false
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Face Priority
+ * @text 優先順位
+ * @type select
+ * @option 低い(ゲージの下)
+ * @value 0
+ * @option 高い(ゲージの上)
+ * @value 1
+ * @default 1
+ * @parent -> FACE <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> アクター名 <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name Visible
+ * @text 表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 70
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -7
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name Align
+ * @text 文字配置
+ * @desc 0:左 / 1:中央 / 2:右
+ * @type select
+ * @option 左
+ * @value 0
+ * @option 中央
+ * @value 1
+ * @option 右
+ * @value 2
+ * @default 0
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name Font Size
+ * @text フォントサイズ
+ * @type number
+ * @max 9007
+ * @default 20
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name Bold Size
+ * @text 文字太さ
+ * @type number
+ * @max 9007
+ * @default 4
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Name Font Italic
+ * @text フォントをイタリック化
+ * @default false
+ * @type boolean
+ * @on イタリック
+ * @off 通常
+ * @parent -> NAME <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Meter Visible
+ * @text メーター表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Meter X-Axis
+ * @text メーターX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 164
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Meter Y-Axis
+ * @text メーターY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 21
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Meter Angle
+ * @text メーター角度
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Meter Flow Anime
+ * @text メーターのフローアニメ有効化
+ * @desc 画像はHPメータの幅の3倍である必要があります。
+ * @default true
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Number Visible
+ * @text 値の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Number Align type
+ * @text 値の文字配置
+ * @type select
+ * @option 右
+ * @value 0
+ * @option 中央
+ * @value 1
+ * @option 左
+ * @value 2
+ * @option 対角線
+ * @value 3
+ * @default 0
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Number X-Axis
+ * @text HP値のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 265
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param HP Number Y-Axis
+ * @text HP値のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxHP Number Visible
+ * @text 最大HP値の表示
+ * @default false
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxHP Number X-Axis
+ * @text 最大HP値のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 185
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxHP Number Y-Axis
+ * @text 最大HP値のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 40
+ * @parent -> HP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Meter Visible
+ * @text メーターの表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Meter X-Axis
+ * @text メーターのX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 297
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Meter Y-Axis
+ * @text メーターのY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 21
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Meter Angle
+ * @text メーターの角度設定
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Meter Flow Anime
+ * @text メーターのフローアニメ有効化
+ * @desc 画像はゲージの幅の3倍である必要があります。
+ * @default true
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Number Visible
+ * @text 値の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Number Align type
+ * @text 値の文字配置
+ * @type select
+ * @option 右
+ * @value 0
+ * @option 中央
+ * @value 1
+ * @option 左
+ * @value 2
+ * @option 対角線
+ * @value 3
+ * @default 0
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Number X-Axis
+ * @text 値のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 397
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MP Number Y-Axis
+ * @text 値のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxMP Number Visible
+ * @text 最大値の表示
+ * @default false
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxMP Number X-Axis
+ * @text 最大値のX軸位置
+ * @default 196
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxMP Number Y-Axis
+ * @text 最大値のY軸位置
+ * @default 78
+ * @parent -> MP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Meter Visible
+ * @text メーターの表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Meter X-Axis
+ * @text メーターのX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 420
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Meter Y-Axis
+ * @text メーターのY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 21
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Meter Angle
+ * @text メーターの角度設定
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Meter Flow Anime
+ * @text メーターのフローアニメ有効化
+ @ desc 画像はゲージの幅の3倍である必要があります。
+ * @default true
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Number Visible
+ * @text 値の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Number Align type
+ * @text 値の文字配置
+ * @type select
+ * @option 右
+ * @value 0
+ * @option 中央
+ * @value 1
+ * @option 左
+ * @value 2
+ * @option 対角線
+ * @value 3
+ * @default 0
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Number X-Axis
+ * @text 値のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 520
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param TP Number Y-Axis
+ * @text 値のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxTP Number Visible
+ * @text 最大値の表示
+ * @default false
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxTP Number X-Axis
+ * @text 最大値のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 175
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param MaxTP Number Y-Axis
+ * @text 最大値のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 99
+ * @parent -> TP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param ATB Meter Visible
+ * @text メーターの表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param ATB Meter X-Axis
+ * @text メーターのX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param ATB Meter Y-Axis
+ * @text メーターのY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 32
+ * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param ATB Meter Angle
+ * @text メーターの角度
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param ATB Meter Flow Anime
+ * @text メーターのフローアニメ有効化
+ * @desc 画像はゲージの幅の3倍である必要があります。
+ * @default false
+ * @type boolean
+ * @on 有効
+ * @off 無効
+ * @parent -> ATB <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> ステートアイコン <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param States Visible
+ * @text 表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param States X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 532
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param States Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param States Mode
+ * @text 表示モード
+ * @desc 0:タイミングモード / 1:ラインモード
+ * @type select
+ * @option タイミングモード (1つのステートアイコンを交代で表示)
+ * @value 0
+ * @option ラインモード (ステートアイコンを並べて表示)
+ * @value 1
+ * @default 0
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param States Max
+ * @text 並ぶ最大数
+ * @type number
+ * @min 1
+ * @max 9007
+ * @default 4
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param States Align
+ * @text 配置開始位置
+ * @desc 0:左 / 1:右 / 2:上 / 3:下
+ * @type select
+ * @option 左
+ * @value 0
+ * @option 右
+ * @value 1
+ * @option 上
+ * @value 2
+ * @option 下
+ * @value 3
+ * @default 0
+ * @parent -> STATES <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> コマンドウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Command Auto Adjust
+ * @text 自動位置調整の有効化
+ * @desc 0:自動調整 / 1:固定
+ * @type select
+ * @option 自動調整
+ * @value 0
+ * @option 固定
+ * @value 1
+ * @default 1
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Command X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 15
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Command Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 440
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Command Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 192
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Command Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 180
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Command Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Command Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Command
+ * @text レイアウト画像を表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Command X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -25
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Command Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -35
+ * @parent -> W COMMAND <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> パーティウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Party X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 325
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Party Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 170
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Party Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 192
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Party Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 110
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Party Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Party Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Party
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Party X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -325
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Party Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -42
+ * @parent -> W PARTY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> ヘルプウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Help X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Help Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Help Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 816
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Help Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 108
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Help Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Help Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Help
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Help X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Help Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W HELP <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> スキルウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 444
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 816
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 180
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill maxCols
+ * @text 最大列数
+ * @type number
+ * @min 1
+ * @max 9007
+ * @default 2
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Skill Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Skill
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Skill X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Skill Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -67
+ * @parent -> W SKILL <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> アイテムウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ * @default
+ *
+ * @param W Item X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Item Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 444
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Item Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 816
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Item Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 180
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Item maxCols
+ * @text 最大列数
+ * @type number
+ * @min 1
+ * @max 9007
+ * @default 2
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Item Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Item Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 50
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Item
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Item X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Item Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -67
+ * @parent -> W ITEM <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> アクターウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 444
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 816
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 180
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor maxCols
+ * @text 最大列数
+ * @type number
+ * @min 1
+ * @max 9007
+ * @default 1
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Actor Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Actor
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Actor X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Actor Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -67
+ * @parent -> W ACTOR <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> 敵ウィンドウ <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy X-Axis
+ * @text X軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy Y-Axis
+ * @text Y軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 444
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy Width
+ * @text 幅
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 816
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy Height
+ * @text 高さ
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 180
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy maxCols
+ * @text 最大列数
+ * @type number
+ * @min 1
+ * @max 9007
+ * @default 2
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy Slide X
+ * @text スライドアニメX量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param W Enemy Slide Y
+ * @text スライドアニメY量
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Layout Enemy
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Enemy X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param L Enemy Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default -67
+ * @parent -> W ENEMY <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> スクリーン全体 <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Screen Layout
+ * @text レイアウト画像の表示
+ * @default true
+ * @type boolean
+ * @on 表示
+ * @off 非表示
+ * @parent -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Screen X-Axis
+ * @text レイアウト画像のX軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Screen Y-Axis
+ * @text レイアウト画像のY軸位置
+ * @type number
+ * @min -9007
+ * @max 9007
+ * @default 0
+ * @parent -> SCREEN LAYOUT <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param
+ *
+ * @param -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ * @text -> 位置調整 <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 1
+ * @text アクター1HUD
+ * @desc 例: 200,200
+ * @default 220,450
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 2
+ * @text アクター2HUD
+ * @desc 例: 200,200
+ * @default 220,495
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 3
+ * @text アクター3HUD
+ * @desc 例: 200,200
+ * @default 220,540
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 4
+ * @text アクター4HUD
+ * @desc 例: 200,200
+ * @default 220,585
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 5
+ * @text アクター5HUD
+ * @desc 例: 200,200
+ * @default 220,630
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 6
+ * @text アクター6HUD
+ * @desc 例: 200,200
+ * @default 220,675
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 7
+ * @text アクター7HUD
+ * @desc 例: 200,200
+ * @default
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 8
+ * @text アクター8HUD
+ * @desc 例: 200,200
+ * @default
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @param Custom Position 9
+ * @text アクター9HUD
+ * @desc 例: 200,200
+ * @default
+ * @parent -> CUSTOM POSITION <<<<<<<<<<<<<<<<<<<<<<<
+ *
+ * @help
+ * 翻訳:ムノクラ
+ * https://fungamemake.com/
+ * https://twitter.com/munokura/
+ *
+ * ===========================================================================
+ * +++ MOG_BattleHud (v5.04f) +++
+ * By Moghunter
+ * https://atelierrgss.wordpress.com/
+ * ===========================================================================
+ * このプラグインは戦闘のレイアウトをカスタマイズします。
+ *
+ * ===========================================================================
+ * - 必要なファイル
+ * ===========================================================================
+ * 以下のファイルが必要になります。 (img/battlehud/)
+ *
+ * ->  HP_Meter.png
+ * ->  HP_Number.png
+ * ->  MP_Meter.png
+ * ->  MP_Number.png
+ * ->  TP_Meter.png
+ * ->  TP_Number.png
+ * ->  ATB_Meter.png
+ * ->  Layout.png
+ * ->  Layout2.png
+ * ->  Layout_Actor.png
+ * ->  Layout_Command.png
+ * ->  Layout_Enemy.png
+ * ->  Layout_Help.png
+ * ->  Layout_Item.png
+ * ->  Layout_Party.png
+ * ->  Layout_Screen.png
+ * ->  Layout_Skill.png
+ * ->  Turn.png
+ *
+ * ===========================================================================
+ * アクターの顔画像には、以下のように名前を付けます。
+ *
+ * Face_ + ACTOR_ID.png
+ *
+ * Face_1.png
+ * Face_2.png
+ * Face_3.png
+ * ...
+ *
+ * ===========================================================================
+ * - メモタグ
+ * ===========================================================================
+ * 顔の呼吸エフェクトを有効にするには、下のメモタグを使います。
+ *
+ * Face Breath Effect
+ *
+ * ===========================================================================
+ * - プラグインコマンド
+ * ===========================================================================
+ * HUDを隠すには、以下のコマンドを使います。
+ *
+ *     bhud_disable
+ *
+ * HUDを表示するには、以下のコマンドを使います。
+ *
+ *     bhud_enable
+ *
+ * ===========================================================================
+ * - スクリプトコマンド
+ * ===========================================================================
+ * HUDを隠すには、以下のコマンドを使います。
+ *
+ *     $gameSystem._bhud_visible = false
+ *
+ * HUDを表示するには、以下のコマンドを使います。
+ *
+ *     $gameSystem._bhud_visible = true
+ *
+ * ===========================================================================
+ * - 更新履歴
+ * ===========================================================================
+ * - (version 5.04f)
+ * (BUG FIX) - フロントビュー戦闘で全体アニメーション位置を正しく表示
+ * (BUG FIX) - 前回の戦闘でキャラクターが殺された場合、
+ *             戦闘開始時に正しい顔を表示しない現象を修正。
+ *
+ */
+
+//============================================================================
 // ** PLUGIN PARAMETERS
-//=============================================================================
+//============================================================================
 
-　　var Imported = Imported || {};
-　　Imported.MOG_BattleHud = true;
-　　var Moghunter = Moghunter || {}; 
+    var Imported = Imported || {};
+    Imported.MOG_BattleHud = true;
+    var Moghunter = Moghunter || {};
 
-  　Moghunter.parameters = PluginManager.parameters('MOG_BattleHud');
-   
+    Moghunter.parameters = PluginManager.parameters('MOG_BattleHud');
+
     // HUD POSITION
 	Moghunter.bhud_pos_x = Number(Moghunter.parameters['Hud X-Axis'] || -90);
 	Moghunter.bhud_pos_y = Number(Moghunter.parameters['Hud Y-Axis'] || 480);
@@ -1257,24 +2718,24 @@
 	Moghunter.bhud_max_battle_members = Number(Moghunter.parameters['Max Battle Members'] || 4);
 	Moghunter.bhud_slideX = Number(Moghunter.parameters['Hud Slide X'] || 0);
 	Moghunter.bhud_slideY = Number(Moghunter.parameters['Hud Slide Y'] || 0);
-	
+
     // Layout Overlay
 	Moghunter.bhud_layoverlay_visible = String(Moghunter.parameters['Layout2 Visible'] || "true");
 	Moghunter.bhud_layoverlay_x = Number(Moghunter.parameters['Layout2 X-Axis'] || 0);
 	Moghunter.bhud_layoverlay_y = Number(Moghunter.parameters['Layout2 Y-Axis'] || 0);
-	
+
     // Screen Layout
 	Moghunter.bhud_screen_layout = String(Moghunter.parameters['Screen Layout'] || "true");
 	Moghunter.bhud_screen_layout_x = Number(Moghunter.parameters['Screen X-Axis'] || 0);
 	Moghunter.bhud_screen_layout_y = Number(Moghunter.parameters['Screen Y-Axis'] || 0);
-		
+
 	// TURN POSITION
 	Moghunter.bhud_turn_visible = String(Moghunter.parameters['Turn Visible'] || true);
 	Moghunter.bhud_turn_pos_x = Number(Moghunter.parameters['Turn X-Axis'] || -10);
-	Moghunter.bhud_turn_pos_y = Number(Moghunter.parameters['Turn Y-Axis'] || -10);		
-	Moghunter.bhud_turn_rotation = Number(Moghunter.parameters['Turn Rotation Speed'] || 0.01);	
+	Moghunter.bhud_turn_pos_y = Number(Moghunter.parameters['Turn Y-Axis'] || -10);
+	Moghunter.bhud_turn_rotation = Number(Moghunter.parameters['Turn Rotation Speed'] || 0.01);
 	Moghunter.bhud_turn_zoom = String(Moghunter.parameters['Turn Zoom Animation'] || "true");
-	
+
 	// FACE POSITION
 	Moghunter.bhud_face_visible = String(Moghunter.parameters['Face Visible'] || true);
 	Moghunter.bhud_face_shake = String(Moghunter.parameters['Face Shake Animation'] || true);
@@ -1283,7 +2744,7 @@
 	Moghunter.bhud_face_pos_x = Number(Moghunter.parameters['Face X-Axis'] || 52);
 	Moghunter.bhud_face_pos_y = Number(Moghunter.parameters['Face Y-Axis'] || 52);
 	Moghunter.bhud_face_priority = Number(Moghunter.parameters['Face Priority'] || 0);
-	
+
 	// NAME POSITION
 	Moghunter.bhud_name_visible = String(Moghunter.parameters['Name Visible'] || true);
 	Moghunter.bhud_name_font_size = Number(Moghunter.parameters['Name Font Size'] || 20);
@@ -1291,7 +2752,7 @@
 	Moghunter.bhud_name_font_italic = String(Moghunter.parameters['Name Font Italic'] || false);
 	Moghunter.bhud_name_align  = Number(Moghunter.parameters['Name Align'] || 1);
 	Moghunter.bhud_name_pos_x = Number(Moghunter.parameters['Name X-Axis'] || -25);
-	Moghunter.bhud_name_pos_y = Number(Moghunter.parameters['Name Y-Axis'] || 65);	
+	Moghunter.bhud_name_pos_y = Number(Moghunter.parameters['Name Y-Axis'] || 65);
 
 	// HP METER POSITION
 	Moghunter.bhud_hp_meter_visible = String(Moghunter.parameters['HP Meter Visible'] || true);
@@ -1299,65 +2760,65 @@
 	Moghunter.bhud_hp_meter_pos_y = Number(Moghunter.parameters['HP Meter Y-Axis'] || 7);
 	Moghunter.bhud_hp_meter_rotation = Number(Moghunter.parameters['HP Meter Angle'] || 0);
 	Moghunter.bhud_hp_meter_flow = String(Moghunter.parameters['HP Meter Flow Anime'] || true);
-	
+
 	// HP NUMBER POSITION
 	Moghunter.bhud_hp_number_visible  = String(Moghunter.parameters['HP Number Visible'] || true);
 	Moghunter.bhud_hp_number_pos_x  = Number(Moghunter.parameters['HP Number X-Axis'] || 170);
 	Moghunter.bhud_hp_number_pos_y  = Number(Moghunter.parameters['HP Number Y-Axis'] || -11);
 	Moghunter.bhud_maxhp_number_visible  = String(Moghunter.parameters['MaxHP Number Visible'] || false);
 	Moghunter.bhud_maxhp_number_pos_x  = Number(Moghunter.parameters['MaxHP Number X-Axis'] || 245);
-	Moghunter.bhud_maxhp_number_pos_y  = Number(Moghunter.parameters['MaxHP Number Y-Axis'] || 20);	
-    Moghunter.bhud_hp_align_type  = Number(Moghunter.parameters['HP Number Align type'] || 0);	
-	
+	Moghunter.bhud_maxhp_number_pos_y  = Number(Moghunter.parameters['MaxHP Number Y-Axis'] || 20);
+    Moghunter.bhud_hp_align_type  = Number(Moghunter.parameters['HP Number Align type'] || 0);
+
 	// MP METER POSITION
 	Moghunter.bhud_mp_meter_visible = String(Moghunter.parameters['MP Meter Visible'] || true);
 	Moghunter.bhud_mp_meter_pos_x = Number(Moghunter.parameters['MP Meter X-Axis'] || 104);
-	Moghunter.bhud_mp_meter_pos_y = Number(Moghunter.parameters['MP Meter Y-Axis'] || 33);	
+	Moghunter.bhud_mp_meter_pos_y = Number(Moghunter.parameters['MP Meter Y-Axis'] || 33);
 	Moghunter.bhud_mp_meter_rotation = Number(Moghunter.parameters['MP Meter Angle'] || 0);
 	Moghunter.bhud_mp_meter_flow = String(Moghunter.parameters['MP Meter Flow Anime'] || true);
-	
+
 	// MP NUMBER POSITION
 	Moghunter.bhud_mp_number_visible  = String(Moghunter.parameters['MP Number Visible'] || true);
 	Moghunter.bhud_mp_number_pos_x  = Number(Moghunter.parameters['MP Number X-Axis'] || 187);
 	Moghunter.bhud_mp_number_pos_y  = Number(Moghunter.parameters['MP Number Y-Axis'] || 16);
 	Moghunter.bhud_maxmp_number_visible  = String(Moghunter.parameters['MaxMP Number Visible'] || false);
 	Moghunter.bhud_maxmp_number_pos_x  = Number(Moghunter.parameters['MaxMP Number X-Axis'] || 196);
-	Moghunter.bhud_maxmp_number_pos_y  = Number(Moghunter.parameters['MaxMP Number Y-Axis'] || 78);	
+	Moghunter.bhud_maxmp_number_pos_y  = Number(Moghunter.parameters['MaxMP Number Y-Axis'] || 78);
     Moghunter.bhud_mp_align_type  = Number(Moghunter.parameters['MP Number Align type'] || 0);
 	Moghunter.bhud_mp_diagonal_number  = Number(Moghunter.parameters['MP Number Diagonal'] || true);
-	
+
 	// TP METER POSITION
 	Moghunter.bhud_tp_meter_visible = String(Moghunter.parameters['TP Meter Visible'] || true);
 	Moghunter.bhud_tp_meter_pos_x = Number(Moghunter.parameters['TP Meter X-Axis'] || 104);
-	Moghunter.bhud_tp_meter_pos_y = Number(Moghunter.parameters['TP Meter Y-Axis'] || 59);	
+	Moghunter.bhud_tp_meter_pos_y = Number(Moghunter.parameters['TP Meter Y-Axis'] || 59);
 	Moghunter.bhud_tp_meter_rotation = Number(Moghunter.parameters['TP Meter Angle'] || 0);
 	Moghunter.bhud_tp_meter_flow = String(Moghunter.parameters['TP Meter Flow Anime'] || true);
-	
+
 	// TP NUMBER POSITION
 	Moghunter.bhud_tp_number_visible  = String(Moghunter.parameters['TP Number Visible'] || true);
 	Moghunter.bhud_tp_number_pos_x  = Number(Moghunter.parameters['TP Number X-Axis'] || 187);
 	Moghunter.bhud_tp_number_pos_y  = Number(Moghunter.parameters['TP Number Y-Axis'] || 43);
 	Moghunter.bhud_maxtp_number_visible  = String(Moghunter.parameters['MaxTP Number Visible'] || false);
 	Moghunter.bhud_maxtp_number_pos_x  = Number(Moghunter.parameters['MaxTP Number X-Axis'] || 185);
-	Moghunter.bhud_maxtp_number_pos_y  = Number(Moghunter.parameters['MaxTP Number Y-Axis'] || 116);	
+	Moghunter.bhud_maxtp_number_pos_y  = Number(Moghunter.parameters['MaxTP Number Y-Axis'] || 116);
     Moghunter.bhud_tp_align_type  = Number(Moghunter.parameters['TP Number Align type'] || 0);
 	Moghunter.bhud_tp_diagonal_number  = Number(Moghunter.parameters['TP Number Diagonal'] || false);
-	
+
     // AT METER POSITION
 	Moghunter.bhud_at_meter_visible = String(Moghunter.parameters['ATB Meter Visible'] || true);
 	Moghunter.bhud_at_meter_pos_x = Number(Moghunter.parameters['ATB Meter X-Axis'] || 69);
-	Moghunter.bhud_at_meter_pos_y = Number(Moghunter.parameters['ATB Meter Y-Axis'] || 117);	
+	Moghunter.bhud_at_meter_pos_y = Number(Moghunter.parameters['ATB Meter Y-Axis'] || 117);
 	Moghunter.bhud_at_meter_rotation = Number(Moghunter.parameters['ATB Meter Angle'] || 0);
 	Moghunter.bhud_at_meter_flow = String(Moghunter.parameters['ATB Meter Flow Anime'] || true);
-	
+
 	// STATES POSITION
 	Moghunter.bhud_states_visible = String(Moghunter.parameters['States Visible'] || true);
 	Moghunter.bhud_states_pos_x = Number(Moghunter.parameters['States X-Axis'] || 102);
-	Moghunter.bhud_states_pos_y = Number(Moghunter.parameters['States Y-Axis'] || 76);	
-    Moghunter.bhud_statesType = Number(Moghunter.parameters['States Mode'] || 0);	
-	Moghunter.bhud_statesMax = Number(Moghunter.parameters['States Max'] || 4);	
-	Moghunter.bhud_statesAlign = Number(Moghunter.parameters['States Align'] || 0);	
-	
+	Moghunter.bhud_states_pos_y = Number(Moghunter.parameters['States Y-Axis'] || 76);
+    Moghunter.bhud_statesType = Number(Moghunter.parameters['States Mode'] || 0);
+	Moghunter.bhud_statesMax = Number(Moghunter.parameters['States Max'] || 4);
+	Moghunter.bhud_statesAlign = Number(Moghunter.parameters['States Align'] || 0);
+
     // COMMAND WINDOWS
 	Moghunter.bhud_auto_pos = Number(Moghunter.parameters['Command Auto Adjust'] || 0);
     Moghunter.bhud_com_x = Number(Moghunter.parameters['W Command X-Axis'] || 0);
@@ -1366,22 +2827,22 @@
     Moghunter.bhud_com_lay_x = Number(Moghunter.parameters['L Command X-Axis'] || -25);
     Moghunter.bhud_com_lay_y = Number(Moghunter.parameters['L Command Y-Axis'] || -35);
 	Moghunter.bhud_com_width =  Number(Moghunter.parameters['W Command Width'] || 192);
-    Moghunter.bhud_com_height =  Number(Moghunter.parameters['W Command Height'] || 180);		
+    Moghunter.bhud_com_height =  Number(Moghunter.parameters['W Command Height'] || 180);
     Moghunter.bhud_com_slideX = Number(Moghunter.parameters['W Command Slide X'] || 0);
     Moghunter.bhud_com_slideY = Number(Moghunter.parameters['W Command Slide Y'] || 64);
-	
-		
+
+
 	// PARTY WINDOWS
     Moghunter.bhud_party_x = Number(Moghunter.parameters['W Party X-Axis'] || 325);
     Moghunter.bhud_party_y = Number(Moghunter.parameters['W Party Y-Axis'] || 170);
 	Moghunter.bhud_party_layout = String(Moghunter.parameters['Layout Party'] || true);
     Moghunter.bhud_party_lay_x = Number(Moghunter.parameters['L Party X-Axis'] || -325);
-    Moghunter.bhud_party_lay_y = Number(Moghunter.parameters['L Party Y-Axis'] || -42);	
+    Moghunter.bhud_party_lay_y = Number(Moghunter.parameters['L Party Y-Axis'] || -42);
 	Moghunter.bhud_party_width =  Number(Moghunter.parameters['W Party Width'] || 192);
     Moghunter.bhud_party_height =  Number(Moghunter.parameters['W Party Height'] || 110);
     Moghunter.bhud_party_slide_x = Number(Moghunter.parameters['W Party Slide X'] || 0);
-    Moghunter.bhud_party_slide_y = Number(Moghunter.parameters['W Party Slide Y'] || -150);		
-		
+    Moghunter.bhud_party_slide_y = Number(Moghunter.parameters['W Party Slide Y'] || -150);
+
 	// HELP WINDOW
 	Moghunter.bhud_help_x = Number(Moghunter.parameters['W Help X-Axis'] || 0);
     Moghunter.bhud_help_y = Number(Moghunter.parameters['W Help Y-Axis'] || 0);
@@ -1391,8 +2852,8 @@
 	Moghunter.bhud_help_width = Number(Moghunter.parameters['W Help Width'] || 816);
     Moghunter.bhud_help_height = Number(Moghunter.parameters['W Help Height'] || 108);
 	Moghunter.bhud_help_slide_x = Number(Moghunter.parameters['W Help Slide X'] || 0);
-    Moghunter.bhud_help_slide_y = Number(Moghunter.parameters['W Help Slide Y'] || -150);	
-		
+    Moghunter.bhud_help_slide_y = Number(Moghunter.parameters['W Help Slide Y'] || -150);
+
 	// SKILL WINDOW
 	Moghunter.bhud_skill_x =  Number(Moghunter.parameters['W Skill X-Axis'] || 0);
     Moghunter.bhud_skill_y =  Number(Moghunter.parameters['W Skill Y-Axis'] || 444);
@@ -1403,8 +2864,8 @@
     Moghunter.bhud_skill_height =  Number(Moghunter.parameters['W Skill Height'] || 180);
 	Moghunter.bhud_skill_maxcols = Number(Moghunter.parameters['W Skill maxCols'] || 2);
 	Moghunter.bhud_skill_slide_x =  Number(Moghunter.parameters['W Skill Slide X'] || 0);
-    Moghunter.bhud_skill_slide_y =  Number(Moghunter.parameters['W Skill Slide Y'] || 100);	
-	
+    Moghunter.bhud_skill_slide_y =  Number(Moghunter.parameters['W Skill Slide Y'] || 100);
+
 	// ITEM WINDOW
 	Moghunter.bhud_item_x =  Number(Moghunter.parameters['W Item X-Axis'] || 0);
     Moghunter.bhud_item_y =  Number(Moghunter.parameters['W Item Y-Axis'] || 444);
@@ -1412,11 +2873,11 @@
 	Moghunter.bhud_item_lay_x =  Number(Moghunter.parameters['L Item X-Axis'] || 0);
     Moghunter.bhud_item_lay_y =  Number(Moghunter.parameters['L Item Y-Axis'] || -67);
 	Moghunter.bhud_item_width =  Number(Moghunter.parameters['W Item Width'] || 816);
-    Moghunter.bhud_item_height =  Number(Moghunter.parameters['W Item Height'] || 180);	
+    Moghunter.bhud_item_height =  Number(Moghunter.parameters['W Item Height'] || 180);
 	Moghunter.bhud_item_maxcols = Number(Moghunter.parameters['W Item maxCols'] || 2);
 	Moghunter.bhud_item_slide_x =  Number(Moghunter.parameters['W Item Slide X'] || 0);
-    Moghunter.bhud_item_slide_y =  Number(Moghunter.parameters['W Item Slide Y'] || 150);	
-	
+    Moghunter.bhud_item_slide_y =  Number(Moghunter.parameters['W Item Slide Y'] || 150);
+
     // ACTOR WINDOWS
     Moghunter.bhud_actor_x = Number(Moghunter.parameters['W Actor X-Axis'] || 0);
     Moghunter.bhud_actor_y = Number(Moghunter.parameters['W Actor Y-Axis'] || 444);
@@ -1424,11 +2885,11 @@
     Moghunter.bhud_actor_lay_x = Number(Moghunter.parameters['L Actor X-Axis'] || 0);
     Moghunter.bhud_actor_lay_y = Number(Moghunter.parameters['L Actor Y-Axis'] || -67);
 	Moghunter.bhud_actor_width =  Number(Moghunter.parameters['W Actor Width'] || 816);
-    Moghunter.bhud_actor_height =  Number(Moghunter.parameters['W Actor Height'] || 180);	
+    Moghunter.bhud_actor_height =  Number(Moghunter.parameters['W Actor Height'] || 180);
 	Moghunter.bhud_actor_maxcols = Number(Moghunter.parameters['W Actor maxCols'] || 1);
     Moghunter.bhud_actor_slide_x = Number(Moghunter.parameters['W Actor Slide X'] || 0);
-    Moghunter.bhud_actor_slide_y = Number(Moghunter.parameters['W Actor Slide Y'] || 150);	
-	
+    Moghunter.bhud_actor_slide_y = Number(Moghunter.parameters['W Actor Slide Y'] || 150);
+
     // ENEMY WINDOWS
     Moghunter.bhud_enemy_x = Number(Moghunter.parameters['W Enemy X-Axis'] || 0);
     Moghunter.bhud_enemy_y = Number(Moghunter.parameters['W Enemy Y-Axis'] || 444);
@@ -1436,20 +2897,20 @@
     Moghunter.bhud_enemy_lay_x = Number(Moghunter.parameters['L Enemy X-Axis'] || 0);
     Moghunter.bhud_enemy_lay_y = Number(Moghunter.parameters['L Enemy Y-Axis'] || -67);
 	Moghunter.bhud_enemy_width =  Number(Moghunter.parameters['W Enemy Width'] || 816);
-    Moghunter.bhud_enemy_height =  Number(Moghunter.parameters['W Enemy Height'] || 180);			
+    Moghunter.bhud_enemy_height =  Number(Moghunter.parameters['W Enemy Height'] || 180);
 	Moghunter.bhud_enemy_maxcols = Number(Moghunter.parameters['W Enemy maxCols'] || 2);
     Moghunter.bhud_enemy_slide_x = Number(Moghunter.parameters['W Enemy Slide X'] || 0);
     Moghunter.bhud_enemy_slide_y = Number(Moghunter.parameters['W Enemy Slide Y'] || 150);
-		
+
 	// Custom Position
 	Moghunter.bhud_custom_pos = [];
 	for (var i = 0; i < 8; i++) {
 		Moghunter.bhud_custom_pos[i] = (Moghunter.parameters['Custom Position ' + String(i + 1)] || null);
 	};
-	
-//=============================================================================
+
+//============================================================================
 // ** Sprite Animation
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Update Position
@@ -1465,31 +2926,31 @@ Sprite_Animation.prototype.updatePosition = function() {
 	};
 };
 
-//=============================================================================
+//============================================================================
 // ** ImageManager
-//=============================================================================
+//============================================================================
 
 //==============================
 // * BHud
 //==============================
 ImageManager.loadBHud = function(filename) {
     return this.loadBitmap('img/battlehud/', filename, 0, true);
-};		
+};
 
-//=============================================================================
+//============================================================================
 // ** ImageManager
-//=============================================================================
+//============================================================================
 
 //==============================
 // * BHud
 //==============================
 ImageManager.loadBHud = function(filename) {
     return this.loadBitmap('img/battlehud/', filename, 0, true);
-};		
+};
 
-//=============================================================================
+//============================================================================
 // ** Game_Interpreter
-//=============================================================================	
+//============================================================================
 
 //==============================
 // * PluginCommand
@@ -1501,10 +2962,10 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
 	if (command === "bhud_enable")  {$gameSystem._bhud_visible = true};
 	return true;
 };
-	
-//=============================================================================
+
+//============================================================================
 // ** Game_Temp
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Initialize
@@ -1512,7 +2973,7 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
 var _alias_mog_bhud_temp_initialize = Game_Temp.prototype.initialize;
 Game_Temp.prototype.initialize = function() {
 	_alias_mog_bhud_temp_initialize.call(this);
-	this._bhud_position = [];	
+	this._bhud_position = [];
 	this._bhud_position_active = null;
 	this._bhudFaceAnime = false;
 	this._battleEnd = false;
@@ -1522,9 +2983,9 @@ Game_Temp.prototype.initialize = function() {
 	this._forceRemoveBattleHud = false;
 };
 
-//=============================================================================
+//============================================================================
 // ** Game_System
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Initialize
@@ -1554,23 +3015,23 @@ Game_System.prototype.set_hudcp = function(value) {
 	return  [Number(s[0]),Number(s[1])];
 }
 
-//=============================================================================
+//============================================================================
 // ** Game Interpreter
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Command129
 //==============================
 var _alias_mog_bhud_command129 = Game_Interpreter.prototype.command129;
-Game_Interpreter.prototype.command129 = function() {	
-	_alias_mog_bhud_command129.call(this);	
+Game_Interpreter.prototype.command129 = function() {
+	_alias_mog_bhud_command129.call(this);
 	$gameTemp._refresh_Bhud = true;
 	return true;
 };
 
-//=============================================================================
+//============================================================================
 // ** Game Party
-//=============================================================================
+//============================================================================
 
 //==============================
 // * max Battle Members
@@ -1580,9 +3041,9 @@ Game_Party.prototype.maxBattleMembers = function() {
     return Math.max(Number(Moghunter.bhud_max_battle_members),1);
 };
 
-//=============================================================================
+//============================================================================
 // ** BattleManager
-//=============================================================================
+//============================================================================
 
 //==============================
 // * processVictory
@@ -1590,7 +3051,7 @@ Game_Party.prototype.maxBattleMembers = function() {
 var _alias_mog_bhud_processVictory = BattleManager.processVictory;
 BattleManager.processVictory = function() {
 	 $gameTemp._battleEnd = true;
-	 _alias_mog_bhud_processVictory.call(this);	 
+	 _alias_mog_bhud_processVictory.call(this);
 };
 
 //==============================
@@ -1599,7 +3060,7 @@ BattleManager.processVictory = function() {
 var _alias_mog_bhud_processAbort = BattleManager.processAbort;
 BattleManager.processAbort = function() {
 	 $gameTemp._battleEnd = true;
-	 _alias_mog_bhud_processAbort.call(this);	 
+	 _alias_mog_bhud_processAbort.call(this);
 };
 
 //==============================
@@ -1608,13 +3069,13 @@ BattleManager.processAbort = function() {
 var _alias_mog_bhud_processDefeat = BattleManager.processDefeat;
 BattleManager.processDefeat = function() {
 	 $gameTemp._battleEnd = true;
-	 _alias_mog_bhud_processDefeat.call(this);	 
+	 _alias_mog_bhud_processDefeat.call(this);
 };
 
 
-//=============================================================================
+//============================================================================
 // ** Game BattlerBase
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Initialize
@@ -1645,9 +3106,9 @@ Game_BattlerBase.prototype.eraseState = function(stateId) {
 	this.need_refresh_bhud_states = true;
 };
 
-//=============================================================================
+//============================================================================
 // ** Game Battler
-//=============================================================================
+//============================================================================
 
 //==============================
 // ** iniMembers
@@ -1656,7 +3117,7 @@ var _mog_bhud_gbattler_initMembers = Game_Battler.prototype.initMembers;
 Game_Battler.prototype.initMembers = function() {
 	_mog_bhud_gbattler_initMembers.call(this);
 	this._bhud = {};
-	this._bhud.faceBreath = false;	
+	this._bhud.faceBreath = false;
 };
 
 
@@ -1672,26 +3133,26 @@ Game_Battler.prototype.notetags = function() {
 // ** get Bmotion Idle
 //==============================
 Game_Battler.prototype.checkBhudNoteTags = function() {
-    this.notetags().forEach(function(note) {			
+    this.notetags().forEach(function(note) {
          var note_data = note.split(': ')
     	 if (note_data[0].toLowerCase() == "face breath effect"){
-             this._bhud.faceBreath = true; 
+             this._bhud.faceBreath = true;
     	 };
 	},this);
 };
 
 //==============================
-// * 
+// *
 //==============================
 var _mog_bhud_gactor_initMembers = Game_Actor.prototype.initMembers;
 Game_Actor.prototype.initMembers = function() {
 	_mog_bhud_gactor_initMembers.call(this);
-	
+
 };
 
-//=============================================================================
+//============================================================================
 // ** Game Action
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Apply
@@ -1710,14 +3171,14 @@ Game_Action.prototype.apply = function(target) {
 // * Prepare
 //==============================
 var _alias_mog_bmhud_action_prepare = Game_Action.prototype.prepare
-Game_Action.prototype.prepare = function() {	
+Game_Action.prototype.prepare = function() {
 	_alias_mog_bmhud_action_prepare.call(this);
 	if (this.subject().isActor() && String(Moghunter.bhud_face_zoom) === "true"){this.subject()._bhud_face_data = [0,70,2,70];};
 };
 
-//=============================================================================
+//============================================================================
 // ** Game Actor
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Gain HP
@@ -1737,9 +3198,9 @@ Game_Actor.prototype.recoverAll = function() {
 	this._bhud_face_data[3] += 1;
 };
 
-//=============================================================================
+//============================================================================
 // ** Window_BattleStatus
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Initialize
@@ -1750,9 +3211,9 @@ Window_BattleStatus.prototype.initialize = function() {
     this.visible = false
 };
 
-//=============================================================================
+//============================================================================
 // ** Window_BattleSkill
-//=============================================================================
+//============================================================================
 
 //==============================
 // * windowWidth
@@ -1768,9 +3229,9 @@ Window_BattleSkill.prototype.maxCols = function() {
     return Moghunter.bhud_skill_maxcols;
 };
 
-//=============================================================================
+//============================================================================
 // ** Window_BattleItem
-//=============================================================================
+//============================================================================
 
 //==============================
 // * windowWidth
@@ -1786,9 +3247,9 @@ Window_BattleItem.prototype.maxCols = function() {
     return Moghunter.bhud_item_maxcols;
 };
 
-//=============================================================================
+//============================================================================
 // ** Window_BattleActor
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Initialize
@@ -1804,9 +3265,9 @@ Window_BattleActor.prototype.maxCols = function() {
     return Moghunter.bhud_actor_maxcols;
 };
 
-//=============================================================================
+//============================================================================
 // ** Window_BattleEnemy
-//=============================================================================
+//============================================================================
 
 //==============================
 // * windowWidth
@@ -1822,9 +3283,9 @@ Window_BattleEnemy.prototype.maxCols = function() {
     return Moghunter.bhud_enemy_maxcols;
 };
 
-//=============================================================================
+//============================================================================
 // ** Window Actor Command
-//=============================================================================
+//============================================================================
 
 //==============================
 // * initialize
@@ -1863,7 +3324,7 @@ Window_ActorCommand.prototype.sprite_move_to = function(value,real_value) {
 	if (value > real_value) {value -= dnspeed;
 	    if (value < real_value) {value = real_value};}
     else if (value < real_value) {value  += dnspeed;
-    	if (value  > real_value) {value  = real_value};		
+    	if (value  > real_value) {value  = real_value};
     };
 	return Math.floor(value);
 };
@@ -1875,13 +3336,13 @@ Window_ActorCommand.prototype.slideWindow = function(win,vmode) {
 	 var vm = vmode ? win.active : win.visible;
 	 if (vm) {
 	     var np = [win.org[0],win.org[1]];
-		 win.contentsOpacity += 15;	
+		 win.contentsOpacity += 15;
 	 } else {
 	     var np = [win.org2[0],win.org2[1]];
-		 win.contentsOpacity = 0;	
+		 win.contentsOpacity = 0;
     };
 	 win.x = this.sprite_move_to(win.x,np[0]);
-	 win.y = this.sprite_move_to(win.y,np[1]);	
+	 win.y = this.sprite_move_to(win.y,np[1]);
 };
 
 //==============================
@@ -1939,11 +3400,11 @@ Window_ActorCommand.prototype.updatePosS = function() {
 				];
 				if (this._actorVis != this._actor) {
 					this.x = this.org2[0];
-					this.y = this.org2[1];		
-					this._actorVis = this._actor;  
-				};					
+					this.y = this.org2[1];
+					this._actorVis = this._actor;
+				};
 			};
-			this.slideWindow(this,false);			
+			this.slideWindow(this,false);
 	    } else {
         	this.slideWindow(this,false);
 		};
@@ -1973,15 +3434,15 @@ Window_ActorCommand.prototype.updatePosN = function() {
 //==============================
 var _alias_mog_bhud_wcom_update = Window_ActorCommand.prototype.update;
 Window_ActorCommand.prototype.update = function() {
-    _alias_mog_bhud_wcom_update.call(this);	
+    _alias_mog_bhud_wcom_update.call(this);
     this.updatePosition();
 	if (this._force_hide_duration > 0) {this._force_hide_duration -= 1;this.visible = false};
 };
 
 
-//=============================================================================
+//============================================================================
 // ** Sprite Actor
-//=============================================================================
+//============================================================================
 
 //==============================
 // * Initialize
@@ -2012,7 +3473,7 @@ Sprite_Battler.prototype.updatePosition = function() {
 		   this.y = $gameTemp._bhud_position[this._battler.index()][1] + Moghunter.bhud_face_pos_y;
 		   return;
 		};
-	};	
+	};
     _alias_mog_bhud_sprt_actor_updatePosition.call(this);
 };
 
@@ -2070,9 +3531,9 @@ Sprite_Actor.prototype.updateMain = function() {
 	};
 };
 
-//=============================================================================
+//============================================================================
 // ** Spriteset Battle
-//=============================================================================
+//============================================================================
 
 //==============================
 // ** update Actors
@@ -2085,7 +3546,7 @@ Spriteset_Battle.prototype.updateActors = function() {
 
 //==============================
 // * Is Busy
-//==============================	
+//==============================
 Spriteset_Battle.prototype.isBusy = function() {
 	if ($gameSystem._bhudFaceBattler) {
 		return this.isAnimationPlaying() || this.isAnyoneMoving() || $gameTemp._bhudFaceAnime > 0;
@@ -2094,15 +3555,20 @@ Spriteset_Battle.prototype.isBusy = function() {
 	return this.isAnimationPlaying() || this.isAnyoneMoving();
 };
 
-//=============================================================================
+//============================================================================
 // ** Scene Base
-//=============================================================================
+//============================================================================
 
 //==============================
-// ** create Hud Field
+// ** create Hud Field ** fixed by nekoma otobuki
 //==============================
 Scene_Base.prototype.createHudField = function() {
+	var width = Graphics.boxWidth;
+	var height = Graphics.boxHeight;
+	var x = (Graphics.width - width) / 2;
+	var y = (Graphics.height - height) / 2;
 	this._hudField = new Sprite();
+	this._hudField.setFrame(x, y, width, height);
 	this._hudField.z = 10;
 	this.addChild(this._hudField);
 };
@@ -2127,7 +3593,7 @@ Scene_Base.prototype.createBattleHud = function() {
 		this._battle_hud[i] = new Battle_Hud(i);
 		this._battle_hud[i].mz = 110;
 		this._hudField.addChild(this._battle_hud[i]);
-	};	
+	};
 };
 
 //==============================
@@ -2147,7 +3613,7 @@ Scene_Base.prototype.removeBattleHud = function() {
 //==============================
 // * Create Battle Hud Screen
 //==============================
-Scene_Base.prototype.createBattleHudScreenLayout = function() {	
+Scene_Base.prototype.createBattleHudScreenLayout = function() {
 	this._screen_layout = new Sprite(ImageManager.loadBHud("Layout_Screen"));
 	this._screen_layout.opacity = 0;
 	this._screen_layout.x = Moghunter.bhud_screen_layout_x;
@@ -2160,7 +3626,7 @@ Scene_Base.prototype.createBattleHudScreenLayout = function() {
 // * Update Battle Hud visible
 //==============================
 Scene_Base.prototype.updateBattleHudVisible = function() {
-	if (this.isBattleHudVisible()) {this._screen_layout.opacity += 10}	 
+	if (this.isBattleHudVisible()) {this._screen_layout.opacity += 10}
 	else {this._screen_layout.opacity -= 10};
 };
 
@@ -2182,7 +3648,7 @@ Scene_Base.prototype.refreshBattleHud = function() {
 	$gameTemp._refresh_Bhud = false;
 	for (var i = 0; i < $gameParty.maxBattleMembers(); i++) {
 		this._battle_hud[i].refresh_bhud();
-	};		
+	};
 };
 
 //==============================
@@ -2239,9 +3705,9 @@ Scene_Map.prototype.update = function() {
 	if (this._battle_hud) {this.updateBatteHud()};
 };
 
-//=============================================================================
+//============================================================================
 // ** Scene Battle
-//=============================================================================
+//============================================================================
 
 //==============================
 // ** create Spriteset
@@ -2258,7 +3724,7 @@ Scene_Battle.prototype.createSpriteset = function() {
 //==============================
 Scene_Battle.prototype.createBattleHudSB = function() {
 	this.createBattleHud();
-	if (!$gameSystem.isSideView()) {this.createActorsF()};	
+	if (!$gameSystem.isSideView()) {this.createActorsF()};
 };
 
 //==============================
@@ -2285,7 +3751,7 @@ Scene_Map.prototype.createSpriteset = function() {
 //==============================
 var _alias_mog_bhud_createWindowLayer = Scene_Battle.prototype.createWindowLayer
 Scene_Battle.prototype.createWindowLayer = function() {
-	this.create_layout_window();	
+	this.create_layout_window();
 	_alias_mog_bhud_createWindowLayer.call(this);
 };
 
@@ -2300,9 +3766,9 @@ Scene_Battle.prototype.createAllWindows = function() {
 	this._actorCommandWindow.y = Moghunter.bhud_com_y;
 	this._actorCommandWindow.vis = this._actorCommandWindow.visible;
 	this._actorCommandWindow.width = Moghunter.bhud_com_width;
-	this._actorCommandWindow.height = Moghunter.bhud_com_height;		
+	this._actorCommandWindow.height = Moghunter.bhud_com_height;
 	if (String(Moghunter.bhud_com_layout) === "true") {this._actorCommandWindow.opacity = 0};
-	// PARTY COMMAND ---------------------------------------------------------------------	
+	// PARTY COMMAND ---------------------------------------------------------------------
 	this._partyCommandWindow.x = Moghunter.bhud_party_x;
 	this._partyCommandWindow.y = Moghunter.bhud_party_y;
 	this._partyCommandWindow.org = [Moghunter.bhud_party_x,Moghunter.bhud_party_y];
@@ -2313,7 +3779,7 @@ Scene_Battle.prototype.createAllWindows = function() {
 	this._partyCommandWindow.slide = Moghunter.bhud_party_slide_x === 0 && Moghunter.bhud_party_slide_y === 0 ? false : true;
 	this._partyCommandWindow.vis = this._partyCommandWindow.visible;
 	this._partyCommandWindow.width = Moghunter.bhud_party_width;
-	this._partyCommandWindow.height = Moghunter.bhud_party_height;		
+	this._partyCommandWindow.height = Moghunter.bhud_party_height;
 	if (String(Moghunter.bhud_party_layout) === "true") {this._partyCommandWindow.opacity = 0};
 	// HELP WINDOW ---------------------------------------------------------------------
 	this._helpWindow.x = Moghunter.bhud_help_x;
@@ -2326,7 +3792,7 @@ Scene_Battle.prototype.createAllWindows = function() {
 	this._helpWindow.slide = Moghunter.bhud_help_slide_x === 0 && Moghunter.bhud_help_slide_y === 0 ? false : true;
 	this._helpWindow.vis = this._helpWindow.visible;
 	this._helpWindow.width = Moghunter.bhud_help_width;
-	this._helpWindow.height = Moghunter.bhud_help_height;	
+	this._helpWindow.height = Moghunter.bhud_help_height;
 	if (String(Moghunter.bhud_help_layout) === "true") {this._helpWindow.opacity = 0};
 	// SKILL WINDOW ---------------------------------------------------------------------
 	this._skillWindow.x = Moghunter.bhud_skill_x;
@@ -2352,7 +3818,7 @@ Scene_Battle.prototype.createAllWindows = function() {
 	this._itemWindow.slide = Moghunter.bhud_item_slide_x === 0 && Moghunter.bhud_item_slide_y === 0 ? false : true;
 	this._itemWindow.vis = this._itemWindow.visible;
 	this._itemWindow.width = Moghunter.bhud_item_width;
-	this._itemWindow.height = Moghunter.bhud_item_height;	
+	this._itemWindow.height = Moghunter.bhud_item_height;
 	if (String(Moghunter.bhud_item_layout) === "true") {this._itemWindow.opacity = 0};
 	// ACTOR WINDOW ---------------------------------------------------------------------
 	this._actorWindow.x = Moghunter.bhud_actor_x;
@@ -2365,7 +3831,7 @@ Scene_Battle.prototype.createAllWindows = function() {
 	this._actorWindow.slide = Moghunter.bhud_actor_slide_x === 0 && Moghunter.bhud_actor_slide_y === 0 ? false : true;
 	this._actorWindow.vis = this._actorWindow.visible;
 	this._actorWindow.width = Moghunter.bhud_actor_width;
-	this._actorWindow.height = Moghunter.bhud_actor_height;	
+	this._actorWindow.height = Moghunter.bhud_actor_height;
 	if (String(Moghunter.bhud_actor_layout) === "true") {this._actorWindow.opacity = 0};
 	// ENEMY WINDOW ---------------------------------------------------------------------
 	this._enemyWindow.x = Moghunter.bhud_enemy_x;
@@ -2383,7 +3849,7 @@ Scene_Battle.prototype.createAllWindows = function() {
 };
 
 //==============================
-// ** create Layout Window 
+// ** create Layout Window
 //==============================
 Scene_Battle.prototype.create_layout_window = function() {
 	this._layoutField = new Sprite();
@@ -2408,7 +3874,7 @@ Scene_Battle.prototype.create_layout_window = function() {
 		this._help_layout.y = Moghunter.bhud_help_lay_y;
 		this._help_layout.visible = false;
 		this._layoutField.addChild(this._help_layout);
-	};	
+	};
 	if (String(Moghunter.bhud_skill_layout) === "true") {
 
 		this._skill_layout = new Sprite(ImageManager.loadBHud("Layout_Skill"))
@@ -2423,7 +3889,7 @@ Scene_Battle.prototype.create_layout_window = function() {
 		this._item_layout.y = Moghunter.bhud_item_lay_y;
 		this._item_layout.visible = false;
 		this._layoutField.addChild(this._item_layout);
-	};		
+	};
 	if (String(Moghunter.bhud_actor_layout) === "true") {
 		this._actor_layout = new Sprite(ImageManager.loadBHud("Layout_Actor"))
 		this._actor_layout.x = Moghunter.bhud_actor_lay_x;
@@ -2437,7 +3903,7 @@ Scene_Battle.prototype.create_layout_window = function() {
 		this._enemy_layout.y = Moghunter.bhud_enemy_lay_y;
 		this._enemy_layout.visible = false;
 		this._layoutField.addChild(this._enemy_layout);
-	};	
+	};
 };
 
 //==============================
@@ -2455,7 +3921,7 @@ Scene_Battle.prototype.update = function() {
 //==============================
 Scene_Battle.prototype.updateBattleHud = function() {
 	if ($gameTemp._forceCreateBattleHud) {this.forceCreateBattleHud()};
-	if ($gameTemp._forceRemoveBattleHud) {this.forceRemoveBattleHud()};	
+	if ($gameTemp._forceRemoveBattleHud) {this.forceRemoveBattleHud()};
 	if (this._screen_layout) {this.updateBattleHudVisible()};
 	this.updateWindowSlideEffect()
 	this.updateLayoutWindow();
@@ -2469,13 +3935,13 @@ Scene_Battle.prototype.slideWindow = function(win,vmode) {
 	 var vm = vmode ? win.active : win.visible;
 	 if (vm) {
 	     var np = [win.org[0],win.org[1]];
-		 win.contentsOpacity += 15;	
+		 win.contentsOpacity += 15;
 	 } else {
 	     var np = [win.org2[0],win.org2[1]];
-		 win.contentsOpacity = 0;	
+		 win.contentsOpacity = 0;
 	 };
 	 win.x = this.sprite_move_to(win.x,np[0]);
-	 win.y = this.sprite_move_to(win.y,np[1]);	
+	 win.y = this.sprite_move_to(win.y,np[1]);
 };
 
 //==============================
@@ -2488,8 +3954,8 @@ Scene_Battle.prototype.updateWindowSlideEffect = function() {
 	if (this._itemWindow.slide) {this.slideWindow(this._itemWindow,false)};
 	if (this._actorWindow.slide){this.slideWindow(this._actorWindow,false)};
 	if (this._enemyWindow.slide) {this.slideWindow(this._enemyWindow,false)};
-};	 
-	 
+};
+
 //==============================
 // ** updateLayoutWindows
 //==============================
@@ -2500,7 +3966,7 @@ Scene_Battle.prototype.updateLayoutWindow = function() {
     	this._com_layout.visible = this._actorCommandWindow.isOpenAndActive();
 		this._com_layout.opacity = this._actorCommandWindow.contentsOpacity;
 		if (!this._actorCommandWindow.visible) {this._com_layout.visible = false};
-    };	
+    };
 	if (this._party_layout) {
     	this._party_layout.x = Moghunter.bhud_party_lay_x + this._partyCommandWindow.x;
     	this._party_layout.y = Moghunter.bhud_party_lay_y + this._partyCommandWindow.y;
@@ -2512,8 +3978,8 @@ Scene_Battle.prototype.updateLayoutWindow = function() {
     	this._help_layout.x = Moghunter.bhud_help_lay_x + this._helpWindow.x;
     	this._help_layout.y = Moghunter.bhud_help_lay_y + this._helpWindow.y;
     	this._help_layout.visible = this._helpWindow.visible;
-		this._help_layout.opacity = this._helpWindow.contentsOpacity;		
-    };	
+		this._help_layout.opacity = this._helpWindow.contentsOpacity;
+    };
 	if (this._skill_layout) {
     	this._skill_layout.x = Moghunter.bhud_skill_lay_x + this._skillWindow.x;
     	this._skill_layout.y = Moghunter.bhud_skill_lay_y + this._skillWindow.y;
@@ -2521,28 +3987,28 @@ Scene_Battle.prototype.updateLayoutWindow = function() {
 
 		this._skill_layout.opacity = this._skillWindow.contentsOpacity;
 		if (!this._skillWindow.visible) {this._skill_layout.visible = false};
-    };	
+    };
 	if (this._item_layout) {
     	this._item_layout.x = Moghunter.bhud_item_lay_x + this._itemWindow.x;
     	this._item_layout.y = Moghunter.bhud_item_lay_y + this._itemWindow.y;
     	this._item_layout.visible = this._itemWindow.isOpenAndActive();
 		this._item_layout.opacity = this._itemWindow.contentsOpacity;
 		if (!this._itemWindow.visible) {this._item_layout.visible = false};
-    };	
+    };
 	if (this._actor_layout) {
     	this._actor_layout.x = Moghunter.bhud_actor_lay_x + this._actorWindow.x;
     	this._actor_layout.y = Moghunter.bhud_actor_lay_y + this._actorWindow.y;
     	this._actor_layout.visible = this._actorWindow.isOpenAndActive();
 		this._actor_layout.opacity = this._actorWindow.contentsOpacity;
 		if (!this._actorWindow.visible) {this._actor_layout.visible = false};
-    };	
+    };
 	if (this._enemy_layout) {
     	this._enemy_layout.x = Moghunter.bhud_enemy_lay_x + this._enemyWindow.x;
     	this._enemy_layout.y = Moghunter.bhud_enemy_lay_y + this._enemyWindow.y;
     	this._enemy_layout.visible = this._enemyWindow.isOpenAndActive();
 		this._enemy_layout.opacity = this._enemyWindow.contentsOpacity;
 		if (!this._enemyWindow.visible) {this._enemy_layout.visible = false};
-    };		
+    };
 };
 
 //==============================
@@ -2554,14 +4020,14 @@ Scene_Battle.prototype.sprite_move_to = function(value,real_value) {
 	if (value > real_value) {value -= dnspeed;
 	    if (value < real_value) {value = real_value};}
     else if (value < real_value) {value  += dnspeed;
-    	if (value  > real_value) {value  = real_value};		
+    	if (value  > real_value) {value  = real_value};
     };
 	return Math.floor(value);
 };
 
-//=============================================================================
+//============================================================================
 // * Battle_Hud
-//=============================================================================
+//============================================================================
 function Battle_Hud() {
     this.initialize.apply(this, arguments);
 };
@@ -2573,7 +4039,7 @@ Battle_Hud.prototype.constructor = Battle_Hud;
 // * Initialize
 //==============================
 Battle_Hud.prototype.initialize = function(hud_id) {
-    Sprite.prototype.initialize.call(this);	
+    Sprite.prototype.initialize.call(this);
     this._data_initial_ref = [0,true];
 	this._hud_id = hud_id;
 	this._slideA = [0,Moghunter.bhud_slideX,Moghunter.bhud_slideY];
@@ -2605,7 +4071,7 @@ Battle_Hud.prototype.load_img = function() {
 	if (String(Moghunter.bhud_tp_number_visible) == "true") {this._tp_number_img = ImageManager.loadBHud("TP_Number");};
 	if (String(Moghunter.bhud_maxhp_number_visible) == "true") {this._maxhp_number_img = ImageManager.loadBHud("HP_Number2");};
 	if (String(Moghunter.bhud_maxmp_number_visible) == "true") {this._maxmp_number_img = ImageManager.loadBHud("MP_Number2");};
-	if (String(Moghunter.bhud_maxtp_number_visible) == "true") {this._maxtp_number_img = ImageManager.loadBHud("TP_Number2");};	
+	if (String(Moghunter.bhud_maxtp_number_visible) == "true") {this._maxtp_number_img = ImageManager.loadBHud("TP_Number2");};
 };
 
 //==============================
@@ -2671,7 +4137,7 @@ Battle_Hud.prototype.refresh_bhud = function() {
 // * Refresh Position
 //==============================
 Battle_Hud.prototype.refresh_position = function() {
-	 this.set_hud_position();	      
+	 this.set_hud_position();
 	 this.create_sprites();
  	 this._layout.x = this._pos_x;
 	 this._layout.y = this._pos_y;
@@ -2683,11 +4149,11 @@ Battle_Hud.prototype.refresh_position = function() {
         this._turn.x = this._pos_x + (this._turn.width / 2) + Moghunter.bhud_turn_pos_x;
 	    this._turn.y = this._pos_y + (this._turn.height / 2) + Moghunter.bhud_turn_pos_y;
 	 };
-	 if (this._layout2) { 
+	 if (this._layout2) {
 	  	 this._layout2.x = this._pos_x + Moghunter.bhud_layoverlay_x;
 	     this._layout2.y = this._pos_y + Moghunter.bhud_layoverlay_y;
      };
-	 if (this._face) {this._battler._face_pos = [this._face.x,this._face.y]}; 
+	 if (this._face) {this._battler._face_pos = [this._face.x,this._face.y]};
 };
 
 //==============================
@@ -2715,14 +4181,14 @@ Battle_Hud.prototype.set_hud_position = function() {
 			this._pos_y = Moghunter.bhud_pos_y + py + ps[1];
 		};
      };
-	 $gameTemp._bhud_position[this._hud_id] = [this._pos_x,this._pos_y];     
+	 $gameTemp._bhud_position[this._hud_id] = [this._pos_x,this._pos_y];
 };
 
 //==============================
 // * Update
 //==============================
 Battle_Hud.prototype.update = function() {
-    Sprite.prototype.update.call(this);	
+    Sprite.prototype.update.call(this);
 	if (this._data_initial_ref[0] < 2) {this._data_initial_ref[0] += 1; return};
 	if (this.need_refreh_bhud()) {this.refresh_bhud()};
     if (!this._battler) {return};
@@ -2736,7 +4202,7 @@ Battle_Hud.prototype.update = function() {
 // * Update Slide
 //==============================
 Battle_Hud.prototype.updateSlide = function() {
-	 if (!this.is_hud_visible()) {return}; 
+	 if (!this.is_hud_visible()) {return};
 	 if (this._slideA[0] > 0) {
 		 this.visible = false;
 		 this.opacity = 0;
@@ -2758,7 +4224,7 @@ Battle_Hud.prototype.create_base_sprites = function() {
 	    this.create_layout();}
 	else {
 		this.create_layout();
-   	    this.create_face();	    		
+   	    this.create_face();	    
     };
 };
 
@@ -2769,18 +4235,18 @@ Battle_Hud.prototype.create_sprites = function() {
 	this.create_hp_meter();
 	this.create_mp_meter();
     this.create_tp_meter();
-	this.create_at_meter();	
+	this.create_at_meter();
 	if (String(Moghunter.bhud_layoverlay_visible) == "true") {this.create_layoutOverlay()};
-	this.create_hp_number();	
+	this.create_hp_number();
 	this.create_maxhp_number();
-	this.create_mp_number();	
+	this.create_mp_number();
     this.create_maxmp_number();
  	this.create_tp_number();
 	this.create_maxtp_number();
 	this._stateType = Number(Moghunter.bhud_statesType);
 	if (this._stateType === 0) {
         this.create_states();
-	} else { 
+	} else {
 	    this.create_states2();
 	};
 	this.create_name();
@@ -2789,15 +4255,15 @@ Battle_Hud.prototype.create_sprites = function() {
 //==============================
 // * Update Sprites
 //==============================
-Battle_Hud.prototype.update_sprites = function() {	
+Battle_Hud.prototype.update_sprites = function() {
     this.update_active();
 	this.update_visible();
 	this.update_turn();
-	this.update_face();	
+	this.update_face();
     this.update_hp();
 	this.update_mp();
     this.update_tp();
-	this.update_at();	 
+	this.update_at();
     if (this._state_icon) {
 		if (this._stateType === 0) {
  		     this.update_states();
@@ -2810,14 +4276,14 @@ Battle_Hud.prototype.update_sprites = function() {
 //==============================
 // * Update Active
 //==============================
-Battle_Hud.prototype.update_active = function() {	
+Battle_Hud.prototype.update_active = function() {
    this._active = false
    if (this.isChronoBattle()) {
 	   if (this._battler == $gameTemp._chronoCom.user[1]) {
 		   this._active = true;
 		   $gameTemp._bhud_position_active = $gameTemp._bhud_position[this._hud_id]
-	   };   
-   
+	   };
+
    } else {
 	   if (this._battler == BattleManager.actor()) {
 		   this._active = true;
@@ -2841,7 +4307,7 @@ Battle_Hud.prototype.isChronoBattle = function() {
 // * Update visible
 //==============================
 Battle_Hud.prototype.update_visible = function(sprite) {
-	if (this.is_hud_visible()) {this.opacity += 10}	 
+	if (this.is_hud_visible()) {this.opacity += 10}
 	else {this.opacity -= 10};
 };
 
@@ -2867,7 +4333,7 @@ Battle_Hud.prototype.update_dif = function(value,real_value,speed) {
 	if (value > real_value) {value -= dnspeed;
 	    if (value < real_value) {value = real_value};}
     else if (value < real_value) {value  += dnspeed;
-    	if (value  > real_value) {value  = real_value};		
+    	if (value  > real_value) {value  = real_value};
     };
 	return Math.floor(value);
 };
@@ -2895,7 +4361,7 @@ Battle_Hud.prototype.refresh_meter_flow = function(sprite,value,value_max,type,f
 // * Refresh Number
 //==============================
 Battle_Hud.prototype.refresh_number = function(sprites,value,img_data,x,y,type) {
-    numbers = Math.abs(value).toString().split("");  
+    numbers = Math.abs(value).toString().split("");
 	var nx = 0;
 	var ny = 0;
 	var dir = 1;
@@ -2903,7 +4369,7 @@ Battle_Hud.prototype.refresh_number = function(sprites,value,img_data,x,y,type) 
 	   if (i > numbers.length) {return};
 	   var n = Number(numbers[i]);
 	   sprites[i].setFrame(n * img_data[2], 0, img_data[2], img_data[1]);
-	   sprites[i].visible = true;	
+	   sprites[i].visible = true;
 	   if (this._number_align[type] === 0) {
             var nx = -(img_data[2] * i) + (img_data[2] * numbers.length);
 	   } else if (this._number_align[type] === 1) {
@@ -2912,10 +4378,10 @@ Battle_Hud.prototype.refresh_number = function(sprites,value,img_data,x,y,type) 
 	        var nx = -(img_data[2] * i);
 	   } else if (this._number_align[type] === 3) {
 		  var nx = -(img_data[2] * i);
-	      var ny = (img_data[3] * i);				
+	      var ny = (img_data[3] * i);
 	   } else {
 	      var nx = -(img_data[2] * i) + (img_data[2] * numbers.length);
-	      var ny = (img_data[3] / 2) * dir;		  
+	      var ny = (img_data[3] / 2) * dir;
 	   };
 	   sprites[i].x = x - nx;
 	   sprites[i].y = y - ny;
@@ -2935,11 +4401,11 @@ Battle_Hud.prototype.need_refresh_parameter = function(parameter) {
   	case 1:
          if (this._mp_old[0] != this._battler.mp) {return true};
 		 if (this._mp_old[1] != this._battler.mmp) {return true};
-         break;			
+         break;
   	case 2:
          if (this._tp_old[0] != this._battler.tp) {return true};
 		 if (this._tp_old[1] != this._battler.maxTp()) {return true};
-         break;					
+         break;
   };
   return false;
 };
@@ -2969,7 +4435,7 @@ Battle_Hud.prototype.create_layoutOverlay = function() {
 //==============================
 Battle_Hud.prototype.create_turn = function() {
 	if (String(Moghunter.bhud_turn_visible) != "true") {return};
-	this.removeChild(this._turn);	
+	this.removeChild(this._turn);
 	if (!this._battler) {return};
 	this._turn = new Sprite(this._turn_img);
 	this._turn.anchor.x = 0.5;
@@ -2980,7 +4446,7 @@ Battle_Hud.prototype.create_turn = function() {
 	this._turn_blink = [0,0];
 	this.addChild(this._turn);
 };
-	
+
 //==============================
 // * Update Turn
 //==============================
@@ -2995,7 +4461,7 @@ Battle_Hud.prototype.update_turn = function() {
 	else if (this._turn_blink[0] < 120) {this._turn_blink[1] -= 2}
 	else {this._turn_blink = [0,0]};
 	this._turn.opacity = 135 + this._turn_blink[1]
-};	
+};
 
 //==============================
 // * Update Turn Zoom
@@ -3012,14 +4478,14 @@ Battle_Hud.prototype.updateTurnZoom = function() {
 	};
 	this._turn.scale.y = this._turn.scale.x;
 };
-	
+
 //==============================
 // * Create Face
 //==============================
 Battle_Hud.prototype.create_face = function() {
 	if (String(Moghunter.bhud_face_visible) != "true") {return};
 	this.removeChild(this._face);
-	if (!this._battler) {return};	
+	if (!this._battler) {return};
 	this._face = new Sprite(ImageManager.loadBHud("Face_" + this._battler._actorId));
 	this._face.anchor.x = 0.5;
 	this._face.anchor.y = 0.5;
@@ -3050,7 +4516,7 @@ Battle_Hud.prototype.update_face = function() {
 //==============================
 // * update Face Effects
 //==============================
-Battle_Hud.prototype.updateFaceEffects = function() {	
+Battle_Hud.prototype.updateFaceEffects = function() {
 	if (this._face_data[5] == 0 || this._face_data[5] == 3) {
 		this._face.anchor.y = 1;
 		this._face.y = this._pos_y + Moghunter.bhud_face_pos_y + this._face.height / 2;
@@ -3068,7 +4534,7 @@ Battle_Hud.prototype.updateFaceEffects = function() {
 Battle_Hud.prototype.setBreathEffect = function() {
  	    this._face.animation[0] = 0;
 		var rds = Math.randomInt(100);
-		var rds2 = rds * 0.0000001;		
+		var rds2 = rds * 0.0000001;
 		this._face.animation[2] = 0.000005;
 	    this._face.animation[3] = 0.0002;
 		var int = this._face.animation[3];
@@ -3081,30 +4547,30 @@ Battle_Hud.prototype.setBreathEffect = function() {
 // * update Breath Effect
 //==============================
 Battle_Hud.prototype.updateBreathEffect = function() {
-	this._face.scale.y = 1.00 + this._face.scaleY;	
+	this._face.scale.y = 1.00 + this._face.scaleY;
 	if (this._face.animation[0] == -1) {
-		 if (this._face.bitmap.isReady()) {this.setBreathEffect()} 
-		 return   
-	}	
+		 if (this._face.bitmap.isReady()) {this.setBreathEffect()}
+		 return
+	}
 	if (this._face.animation[8] > 0) {
 		this._face.animation[8]--
 		return
 	}
-	if (this._face.animation[0] == 0) {		  
+	if (this._face.animation[0] == 0) {
 		this._face.animation[1] -= this._face.animation[2]
-		this._face.scaleY += this._face.animation[1];	
- 	    if (this._face.animation[1] <= -this._face.animation[3]) {	
+		this._face.scaleY += this._face.animation[1];
+ 	    if (this._face.animation[1] <= -this._face.animation[3]) {
 		    this._face.animation[1] = -this._face.animation[3]
 		    this._face.animation[0] = 1;
-		};	
+		};
 	  } else {
 		  this._face.animation[1] += this._face.animation[2]
 		  this._face.scaleY += this._face.animation[1];
-		  if (this._face.animation[1] >= this._face.animation[3]) {	
+		  if (this._face.animation[1] >= this._face.animation[3]) {
 			  this._face.animation[1] = this._face.animation[3]
 			  this._face.animation[0] = 0;
 		  };
-	  };		
+	  };
 };
 
 //==============================
@@ -3137,7 +4603,7 @@ Battle_Hud.prototype.update_face_zoom = function() {
 	if (this._battler._bhud_face_data[1] > 0) {this._battler._bhud_face_data[1] -= 1;
 	    if (this._battler._bhud_face_data[1] == 0) {this._face.scale.x = 1.00}
 		else if (this._battler._bhud_face_data[1] < 35) {this._face.scale.x -= 0.005;
-		         if (this._face.scale.x < 1.00) {this._face.scale.x = 1.00;};	
+		         if (this._face.scale.x < 1.00) {this._face.scale.x = 1.00;};
 	    }
 		else if (this._battler._bhud_face_data[1] < 70){this._face.scale.x += 0.005;
 		         if (this._face.scale.x > 1.25) {this._face.scale.x = 1.25;};
@@ -3162,7 +4628,7 @@ Battle_Hud.prototype.update_face_shake = function() {
 Battle_Hud.prototype.create_name = function() {
 	if (String(Moghunter.bhud_name_visible) != "true") {return};
 	this.removeChild(this._name);
-	if (!this._battler) {return};	
+	if (!this._battler) {return};
 	this._name = new Sprite(new Bitmap(200,48));
 	this._name.x = this._pos_x + Moghunter.bhud_name_pos_x;
 	this._name.y = this._pos_y + Moghunter.bhud_name_pos_y;
@@ -3170,7 +4636,7 @@ Battle_Hud.prototype.create_name = function() {
 	if (String(Moghunter.bhud_name_font_italic) === "true") {this._name.bitmap.fontItalic = true};
 
     this._name.bitmap.outlineWidth = Number(Moghunter.bhud_name_font_bold_size);
-	this.addChild(this._name);	
+	this.addChild(this._name);
 	this.refresh_name();
 };
 
@@ -3185,7 +4651,7 @@ Battle_Hud.prototype.refresh_name = function() {
 	} else if (Moghunter.bhud_name_align === 2) {
 		var align = "right"
 	};
-	this._name.bitmap.drawText(this._battler._name, 0, 0, this._name.bitmap.width, this._name.bitmap.height,align);	
+	this._name.bitmap.drawText(this._battler._name, 0, 0, this._name.bitmap.width, this._name.bitmap.height,align);
 };
 
 //==============================
@@ -3200,7 +4666,7 @@ Battle_Hud.prototype.create_hp_meter = function() {
 	this._hp_meter_red.x = this._pos_x + Moghunter.bhud_hp_meter_pos_x;
 	this._hp_meter_red.y = this._pos_y + Moghunter.bhud_hp_meter_pos_y;
 	this._hp_meter_red.rotation = Moghunter.bhud_hp_meter_rotation * Math.PI / 180;
-	this.addChild(this._hp_meter_red);		
+	this.addChild(this._hp_meter_red);
 	this._hp_meter_blue = new Sprite(this._hp_meter_img);
 	this._hp_meter_blue.x = this._hp_meter_red.x;
 	this._hp_meter_blue.y = this._hp_meter_red.y;
@@ -3232,9 +4698,9 @@ Battle_Hud.prototype.create_hp_number = function() {
 	   this._hp_number[i].x = this._hp_img_data[4];
 	   this._hp_number[i].y = this._hp_img_data[5];
 	   this.addChild(this._hp_number[i]);
-	};	
+	};
 	this._hp_number_old = this._battler.hp;
-	this.refresh_number(this._hp_number,this._hp_number_old,this._hp_img_data,this._hp_img_data[4],this._hp_img_data[5],0);	
+	this.refresh_number(this._hp_number,this._hp_number_old,this._hp_img_data,this._hp_img_data[4],this._hp_img_data[5],0);
 };
 
 //==============================
@@ -3243,7 +4709,7 @@ Battle_Hud.prototype.create_hp_number = function() {
 Battle_Hud.prototype.create_maxhp_number = function() {
 	if (String(Moghunter.bhud_maxhp_number_visible) != "true") {return};
 	if (this._maxhp_number) {for (var i = 0; i < this._maxhp_number.length; i++) {this.removeChild(this._maxhp_number[i]);}};
-	if (!this._battler) {return};	
+	if (!this._battler) {return};
 	this._maxhp_number = [];
 	this._maxhp_img_data = [this._maxhp_number_img.width,this._maxhp_number_img.height,
 	                      this._maxhp_number_img.width / 10, this._maxhp_number_img.height / 2,
@@ -3256,9 +4722,9 @@ Battle_Hud.prototype.create_maxhp_number = function() {
 	   this._maxhp_number[i].x = this._maxhp_img_data[4];
 	   this._maxhp_number[i].y = this._maxhp_img_data[5];
 	   this.addChild(this._maxhp_number[i]);
-	};		
+	};
 	this._maxhp_number_old = this._battler.mhp;
-	this.refresh_number(this._maxhp_number,this._maxhp_number_old,this._maxhp_img_data,this._maxhp_img_data[4],this._maxhp_img_data[5],0);	
+	this.refresh_number(this._maxhp_number,this._maxhp_number_old,this._maxhp_img_data,this._maxhp_img_data[4],this._maxhp_img_data[5],0);
 };
 
 //==============================
@@ -3273,7 +4739,7 @@ Battle_Hud.prototype.update_hp = function() {
 	       this.refresh_meter_flow(this._hp_meter_red,this._hp_old_ani[0],this._battler.mhp,1,this._hp_flow[1]);
 		   };
 		   this._hp_flow[1] += 1.5;
-		   if (this._hp_flow[1] > this._hp_flow[3]) {this._hp_flow[1] = 0};		   
+		   if (this._hp_flow[1] > this._hp_flow[3]) {this._hp_flow[1] = 0};
    	    }
 		else {
 		   if (this.need_refresh_parameter(0)) {
@@ -3282,7 +4748,7 @@ Battle_Hud.prototype.update_hp = function() {
 			};
 			var dif_meter = this.update_dif(this._hp_old_ani[0],this._battler.hp,160)
 			if (this._hp_old_ani[0] != dif_meter) {this._hp_old_ani[0] = dif_meter;
-			this.refresh_meter(this._hp_meter_red,this._hp_old_ani[0],this._battler.mhp,1);};		
+			this.refresh_meter(this._hp_meter_red,this._hp_old_ani[0],this._battler.mhp,1);};
 	    };
     };
 	if (this._hp_number) {
@@ -3308,7 +4774,7 @@ Battle_Hud.prototype.create_mp_meter = function() {
 	this._mp_meter_red.x = this._pos_x + Moghunter.bhud_mp_meter_pos_x;
 	this._mp_meter_red.y = this._pos_y + Moghunter.bhud_mp_meter_pos_y;
 	this._mp_meter_red.rotation = Moghunter.bhud_mp_meter_rotation * Math.PI / 180;
-	this.addChild(this._mp_meter_red);		
+	this.addChild(this._mp_meter_red);
 	this._mp_meter_blue = new Sprite(this._mp_meter_img);
 	this._mp_meter_blue.x = this._mp_meter_red.x;
 	this._mp_meter_blue.y = this._mp_meter_red.y;
@@ -3340,9 +4806,9 @@ Battle_Hud.prototype.create_mp_number = function() {
 	   this._mp_number[i].x = this._mp_img_data[4];
 	   this._mp_number[i].y = this._mp_img_data[5] ;
 	   this.addChild(this._mp_number[i]);
-	};	
+	};
 	this._mp_number_old = this._battler.mp;
-	this.refresh_number(this._mp_number,this._mp_number_old,this._mp_img_data,this._mp_img_data[4],this._mp_img_data[5],1);	
+	this.refresh_number(this._mp_number,this._mp_number_old,this._mp_img_data,this._mp_img_data[4],this._mp_img_data[5],1);
 };
 
 //==============================
@@ -3364,9 +4830,9 @@ Battle_Hud.prototype.create_maxmp_number = function() {
 	   this._maxmp_number[i].x = this._maxmp_img_data[4];
 	   this._maxmp_number[i].y = this._maxmp_img_data[5] ;
 	   this.addChild(this._maxmp_number[i]);
-	};	
+	};
 	this._maxmp_number_old = this._battler.mmp;
-	this.refresh_number(this._maxmp_number,this._maxmp_number_old,this._maxmp_img_data,this._maxmp_img_data[4],this._maxmp_img_data[5],1);	
+	this.refresh_number(this._maxmp_number,this._maxmp_number_old,this._maxmp_img_data,this._maxmp_img_data[4],this._maxmp_img_data[5],1);
 };
 
 //==============================
@@ -3381,9 +4847,9 @@ Battle_Hud.prototype.update_mp = function() {
 	       this.refresh_meter_flow(this._mp_meter_red,this._mp_old_ani[0],this._battler.mmp,1,this._mp_flow[1]);
 		   };
 		   this._mp_flow[1] += 1.5;
-		   if (this._mp_flow[1] > this._mp_flow[3]) {this._mp_flow[1] = 0};		   
+		   if (this._mp_flow[1] > this._mp_flow[3]) {this._mp_flow[1] = 0};
    	    }
-		else {		
+		else {
 			if (this.need_refresh_parameter(1)) {
 				this.refresh_meter(this._mp_meter_blue,this._battler.mp,this._battler.mmp,0);
 				this._mp_old = [this._battler.mp,this._battler.mmp];
@@ -3401,8 +4867,8 @@ Battle_Hud.prototype.update_mp = function() {
 	if (this._maxmp_number) {
 		if (this._maxmp_number_old != this._battler.mmp) {this._maxmp_number_old = this._battler.mmp;
 		this.refresh_number(this._maxmp_number,this._maxmp_number_old,this._maxmp_img_data,this._maxmp_img_data[4],this._maxmp_img_data[5],1);};
-	};	
-	
+	};
+
 };
 
 //==============================
@@ -3417,7 +4883,7 @@ Battle_Hud.prototype.create_tp_meter = function() {
 	this._tp_meter_red.x = this._pos_x + Moghunter.bhud_tp_meter_pos_x;
 	this._tp_meter_red.y = this._pos_y + Moghunter.bhud_tp_meter_pos_y;
 	this._tp_meter_red.rotation = Moghunter.bhud_tp_meter_rotation * Math.PI / 180;
-	this.addChild(this._tp_meter_red);		
+	this.addChild(this._tp_meter_red);
 	this._tp_meter_blue = new Sprite(this._tp_meter_img);
 	this._tp_meter_blue.x = this._tp_meter_red.x;
 	this._tp_meter_blue.y = this._tp_meter_red.y;
@@ -3450,9 +4916,9 @@ Battle_Hud.prototype.create_tp_number = function() {
 
 	   this._tp_number[i].y = this._tp_img_data[5] ;
 	   this.addChild(this._tp_number[i]);
-	};	
+	};
 	this._tp_number_old = this._battler.tp;
-	this.refresh_number(this._tp_number,this._tp_number_old,this._tp_img_data,this._tp_img_data[4],this._tp_img_data[5],2);	
+	this.refresh_number(this._tp_number,this._tp_number_old,this._tp_img_data,this._tp_img_data[4],this._tp_img_data[5],2);
 };
 
 //==============================
@@ -3474,9 +4940,9 @@ Battle_Hud.prototype.create_maxtp_number = function() {
 	   this._maxtp_number[i].x = this._maxtp_img_data[4];
 	   this._maxtp_number[i].y = this._maxtp_img_data[5] ;
 	   this.addChild(this._maxtp_number[i]);
-	};	
+	};
 	this._maxtp_number_old = this._battler.maxTp();
-	this.refresh_number(this._maxtp_number,this._maxtp_number_old,this._maxtp_img_data,this._maxtp_img_data[4],this._maxtp_img_data[5],2);	
+	this.refresh_number(this._maxtp_number,this._maxtp_number_old,this._maxtp_img_data,this._maxtp_img_data[4],this._maxtp_img_data[5],2);
 };
 
 //==============================
@@ -3491,9 +4957,9 @@ Battle_Hud.prototype.update_tp = function() {
 	       this.refresh_meter_flow(this._tp_meter_red,this._tp_old_ani[0],this._battler.maxTp(),1,this._tp_flow[1]);
 		   };
 		   this._tp_flow[1] += 1.5;
-		   if (this._tp_flow[1] > this._tp_flow[3]) {this._tp_flow[1] = 0};		   
+		   if (this._tp_flow[1] > this._tp_flow[3]) {this._tp_flow[1] = 0};
    	    }
-		else {	
+		else {
 			if (this.need_refresh_parameter(2)) {
 				this.refresh_meter(this._tp_meter_blue,this._battler.tp,this._battler.maxTp(),0);
 				this._tp_old = [this._battler.tp,this._battler.maxTp()];
@@ -3520,14 +4986,14 @@ Battle_Hud.prototype.create_at_meter = function() {
 	this._at_meter = new Sprite(this._at_meter_img);
 	this._at_meter.x = this._pos_x + Moghunter.bhud_at_meter_pos_x;
 	this._at_meter.y = this._pos_y + Moghunter.bhud_at_meter_pos_y;
-	this._at_meter.rotation = Moghunter.bhud_at_meter_rotation * Math.PI / 180; 
-	this.addChild(this._at_meter);	
+	this._at_meter.rotation = Moghunter.bhud_at_meter_rotation * Math.PI / 180;
+	this.addChild(this._at_meter);
 	if (String(Moghunter.bhud_at_meter_flow) === "true") {this._at_flow[0] = true;
 	    this._at_flow[2] = this._at_meter_img.width / 3;
 		this._at_flow[3] = this._at_flow[2] * 2;
 		this._at_flow[1] = Math.floor(Math.random() * this._at_flow[2]);
 	};
-    this.check_compatibility_atb();	
+    this.check_compatibility_atb();
 };
 
 //==============================
@@ -3537,7 +5003,7 @@ Battle_Hud.prototype.check_compatibility_atb = function() {
 	if (Imported.Ellye_ATB) {
         var parameters = $plugins.filter(function(p) {
             return p.description.contains('<Ellye ATB>');
-        })[0].parameters; 
+        })[0].parameters;
 	this._ellye_max_atb = Number(parameters['Full ATB Gauge'] || 50000);
 	};
 };
@@ -3561,11 +5027,11 @@ Battle_Hud.prototype.update_at = function() {
 			   this.refresh_at_meter_flow(this._at_meter,this.at(),this.max_at(),1,this._at_flow[1]);}
 			else {
 			   this.refresh_at_meter_flow(this._at_meter,this.at(),this.max_at(),0,this._at_flow[1]);};
-			   
+
 		   this._at_flow[1] += 1.5;
-		   if (this._at_flow[1] > this._at_flow[3]) {this._at_flow[1] = 0};		   
+		   if (this._at_flow[1] > this._at_flow[3]) {this._at_flow[1] = 0};
    	    }
-		else {	
+		else {
 			if (this.is_casting()){
 				if (this.is_max_cast()){
 				   this.refresh_at_meter(this._at_meter,this.cast_at(),this.cast_max_at(),3);}
@@ -3609,11 +5075,11 @@ Battle_Hud.prototype.at = function() {
  if (Imported.YEP_X_BattleSysATB) {return Math.abs(this._battler._atbSpeed)};
  if (Imported['VE - Active Time Battle']) {
 	 return this._battler.maxAtb - this._battler.atb;
- }; 
+ };
  if (this._battler._ras && $gameSystem.isChronoMode()) {
       return this._battler._chrono.atb;
  };
- return -1;	
+ return -1;
 }
 
 //==============================
@@ -3626,8 +5092,8 @@ Battle_Hud.prototype.max_at = function() {
   if (Imported['VE - Active Time Battle']) {return this._battler.maxAtb};
   if (this._battler._ras && $gameSystem.isChronoMode()) {
       return this._battler._chrono.maxAtb;
-  };  
-  return 1;	
+  };
+  return 1;
 };
 
 //==============================
@@ -3643,7 +5109,7 @@ Battle_Hud.prototype.cast_at = function() {
   if (this._battler._ras && $gameSystem.isChronoMode()) {
       return this._battler._ras.cast.duration;
   };
-  return 0;	
+  return 0;
 };
 
 //==============================
@@ -3656,8 +5122,8 @@ Battle_Hud.prototype.cast_max_at = function() {
   if (Imported['VE - Active Time Battle']) {return this._battler.maxAtb};
   if (this._battler._ras && $gameSystem.isChronoMode()) {
       return this._battler._ras.cast.maxDuration;
-  };  
-  return 1;	
+  };
+  return 1;
 };
 
 //==============================
@@ -3665,13 +5131,13 @@ Battle_Hud.prototype.cast_max_at = function() {
 //==============================
 Battle_Hud.prototype.is_casting = function() {
   if (Imported.MOG_ATB) {if (this._battler._cast_atb[0]) {return true;}};
-  if (Imported.Ellye_ATB) {if (this._battler.casting_action) {return true;}}; 
+  if (Imported.Ellye_ATB) {if (this._battler.casting_action) {return true;}};
   if (Imported.YEP_X_BattleSysATB) {if (this._battler._atbCharging) {return true;}} ;
   if (Imported['VE - Active Time Battle']) {return this._battler.isAtbCast()};
   if (this._battler._chrono && $gameSystem.isChronoMode()) {
       return this._battler.isCastingC();
-  };    
-  return false;	
+  };
+  return false;
 };
 
 //==============================
@@ -3701,7 +5167,7 @@ Battle_Hud.prototype.create_states = function() {
 	this._state_icon.y = this._pos_y + Moghunter.bhud_states_pos_y;
 	this._state_icon.visible = false;
 	this.addChild(this._state_icon);
-	this.refresh_states();	
+	this.refresh_states();
 };
 
 //==============================
@@ -3712,14 +5178,14 @@ Battle_Hud.prototype.refresh_states = function() {
 	this._states_data[2] = 0;
 	this._state_icon.visible = false;
 	if (this._battler.allIcons().length == 0) {this._states_data[1] = 0;return};
-       if (this._battler.allIcons()[this._states_data[1]]) {	
+       if (this._battler.allIcons()[this._states_data[1]]) {
 		this._states_data[0] = this._battler.allIcons()[this._states_data[1]];
 		this._state_icon.visible = true;
 		var sx = this._states_data[0] % 16 * 32;
 		var sy = Math.floor(this._states_data[0] / 16) * 32;
 		this._state_icon.setFrame(sx, sy, 32, 32);
-		this._battler.need_refresh_bhud_states = false;	
-	
+		this._battler.need_refresh_bhud_states = false;
+
 	   };
 	this._states_data[1] += 1;
 	if (this._states_data[1] >= this._battler.allIcons().length) {
@@ -3756,9 +5222,9 @@ Battle_Hud.prototype.create_states2 = function() {
 	this._state_icon = new Sprite();
 	this._state_icon.x = this._pos_x + Moghunter.bhud_states_pos_x;
 	this._state_icon.y = this._pos_y + Moghunter.bhud_states_pos_y;
-	this._state_icon.visible = false;	
+	this._state_icon.visible = false;
 	this.addChild(this._state_icon);
-	this.refresh_states2();	
+	this.refresh_states2();
 };
 
 //==============================
@@ -3769,7 +5235,7 @@ Battle_Hud.prototype.refresh_states2 = function() {
 	this._battler.need_refresh_bhud_states = false;
 	for (i = 0; i < this._stateIcons.length; i++){
 		this._state_icon.removeChild(this._stateIcons[i]);
-	};	
+	};
 	if (this._battler.allIcons().length == 0) {return};
 	this._state_icon.visible = true;
 	this._stateIcons = [];
@@ -3784,11 +5250,11 @@ Battle_Hud.prototype.refresh_states2 = function() {
 		 this._stateIcons[i].setFrame(sx, sy, w, w);
 		 if (align === 1) {
 		     this._stateIcons[i].x = -((w + 4) * i);
-		 } else if (align === 2) { 
+		 } else if (align === 2) {
 		     this._stateIcons[i].y = (w + 4) * i;
 		 } else if (align === 3) {
 			 this._stateIcons[i].y = -((w + 4) * i);
-		 } else {	 
+		 } else {
 		     this._stateIcons[i].x = (w + 4) * i;
 		 };
 		 this._state_icon.addChild(this._stateIcons[i]);

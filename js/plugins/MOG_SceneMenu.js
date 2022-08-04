@@ -866,6 +866,8 @@ Scene_Menu.prototype.createPlayTime = function () {
 	this._playTime.x = Moghunter.scMenu_playTimeNumberX;
 	this._playTime.y = Moghunter.scMenu_playTimeNumberY;
 	this._playTime.bitmap.fontSize = Moghunter.scMenu_playTimeNumberFontSize;
+	this._playTime.bitmap.textColor = (255,255,255)//文字色
+	this._playTime.bitmap.outlineWidth = 0//文字の縁取り
 	this._field.addChild(this._playTime);
 	this._playTimeSec = this.playTimeSec();
 	this.refreshTime();
@@ -878,6 +880,7 @@ Scene_Menu.prototype.refreshTime = function () {
 	this._playTime.bitmap.clear();
 	this._playTimeSec = this.playTimeSec();
 	this._playTime.bitmap.drawText($gameSystem.playtimeText(), 0, 0, 200, 32, "right");
+
 };
 
 //==============================
@@ -969,7 +972,7 @@ Scene_Menu.prototype.createLayout = function () {
 };
 
 //==============================
-// * create Commands
+// * create Commands//コマンドボタン
 //==============================
 Scene_Menu.prototype.createCommands = function () {
 	this._commands = [];
@@ -984,7 +987,7 @@ Scene_Menu.prototype.createCommands = function () {
 		this._commands[i].anchor.y = 0.4;
 		this._commands[i].y = -64;
 		this._commands[i].opacity = 255;
-		this._compos[i] = [Moghunter.scMenu_ComX + (60 * i), Moghunter.scMenu_ComY + (48 * h)];
+		this._compos[i] = [Moghunter.scMenu_ComX + (64 * i), Moghunter.scMenu_ComY + (90 * h)];
 		this._comzoom[i] = 0;
 		this._comField.addChild(this._commands[i]);
 		h = h === 0 ? 1 : 0;
@@ -1003,8 +1006,8 @@ Scene_Menu.prototype.updateCommands = function () {
 			if (this._commandWindow.isCurrentItemEnabled()) { this._commands[i].opacity += 20 };
 			if (this._comzoom[i] === 0 && !this._statusWindow.active) {
 				this._commands[i].scale.x += 0.01;
-				if (this._commands[i].scale.x >= 1.30) {
-					this._commands[i].scale.x = 1.30;
+				if (this._commands[i].scale.x >= 1) {
+					this._commands[i].scale.x = 1;
 					this._comzoom[i] = 1;
 				};
 			} else {
@@ -1082,8 +1085,8 @@ Scene_Menu.prototype.commandMoveTo = function (value, real_value) {
 // * create Command Name
 //==============================
 Scene_Menu.prototype.createCommandName = function () {
-	this._commandName = new Sprite(new Bitmap(100, 32));
-	this._commandName.bitmap.fontSize = Moghunter.scMenu_ComNameFontSize;
+	this._commandName = new Sprite(new Bitmap(2400, 2400));//コマンド名の範
+	this._commandName.bitmap.fontSize = Moghunter.scMenu_ComNameFontSize;//コマンド名の大きさ
 	this._commandNameIndex = -2;
 	this._commandNameIndex2 = -2;
 	this._field.addChild(this._commandName);
@@ -1130,6 +1133,7 @@ Scene_Menu.prototype.refreshActorName = function () {
 	this._commandName.x = Moghunter.scMenu_ComNameX - 100;
 	this._commandName.y = Moghunter.scMenu_ComNameY;
 	this._commandName.opacity = 0;
+
 };
 
 //==============================
@@ -1146,7 +1150,7 @@ Scene_Menu.prototype.createSelection = function () {
 	this._selField.x = 50;
 	for (var i = 0; i < $gameParty.members().length; i++) {
 		this._selection[i] = new Sprite(this._facesBitmaps[i]);
-		this._selectionPos[i] = [Moghunter.scMenu_FaceSelX + ((4 + this._facesBitmaps[i].width) * i), Moghunter.scMenu_FaceSelY];
+		this._selectionPos[i] = [Moghunter.scMenu_FaceSelX + ((4 + this._facesBitmaps[i].width) * i), Moghunter.scMenu_FaceSelY];//スキルとかのアクター選択画像の幅
 		this._selection[i].anchor.x = 0.5;
 		this._selection[i].anchor.y = 0.5;
 		this._selection[i].opacity = 160;
@@ -1538,14 +1542,18 @@ MCharStatus.prototype.createSprites = function () {
 };
 
 //==============================
-// * Create Name
+// * Create Name..名前
 //==============================
 MCharStatus.prototype.createName = function () {
 	this._name = new Sprite(new Bitmap(120, 32));
 	this._name.x = this._layout.x + Moghunter.scMenu_NameX;
 	this._name.y = this._layout.y + Moghunter.scMenu_NameY;
 	this._name.bitmap.fontSize = Moghunter.scMenu_NameFontSize;
+	this._name.bitmap.textColor = (255,255,255)//文字色
+	this._name.bitmap.outlineWidth = 0//文字の縁取り
 	this._name.bitmap.drawText(this._actor.name(), 0, 0, 120, 32, "center");
+
+
 	this.addChild(this._name);
 
 };

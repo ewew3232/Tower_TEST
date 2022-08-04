@@ -507,8 +507,8 @@ BattleResult.prototype.initialize = function () {
 	this._actopar = [];
 	this._playME = 10;
 	this.phaseAniClear();
-	this._phaseAnime[0] = 1;
-	this._phaseAnime[1] = 60;
+	//this._phaseAnime[0] = 1;
+	//this._phaseAnime[1] = 1;
 	this._numbeData = [-1, -1];
 	this.loadImages();
 	this.createObjects();

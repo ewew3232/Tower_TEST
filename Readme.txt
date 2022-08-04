@@ -13,12 +13,26 @@
 また、犯罪や殺生を助長する意図はありません。
 
 ━━━━━━━━━━━━━━━━━━━━
-■操作方法
+■操作方法(キーボード)
 
-[矢印キー]：移動
-[Z][Enter]：チェック
-[X][Esc]　：メニュー/キャンセル
-[Shift]　 ：ダッシュ
+左へ移動 ：方向キー左、テンキー4
+右へ移動 ：方向キー右、テンキー6
+上へ移動 ：方向キー上、テンキー8
+下へ移動 ：方向キー下、テンキー2
+指定マスへ移動 ：移動したいマスをクリックorタップ
+
+決定 ；Zキー、Enterキー、スペースキー、対象をタップ
+キャンセル ：Xキー、Escキー、テンキー0、二本指タップ
+メニュー ：Xキー、Escキー、テンキー0、二本指タップ
+ダッシュ ：Shiftを押しながら移動ボタン *注1
+
+F4キー ：全画面モード切替
+F5キー ：リロード(再起動してタイトルへ)
+
+音の調整 ：メニュー画面のオプション項目
+
+*注1
+オプション項目で常時ダッシュ・常時歩行の切り替えが可能
 
 ━━━━━━━━━━━━━━━━━━━━
 ■利用規約（制定日：2022/07/13）
@@ -69,6 +83,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 2022/07/13 [体験版]（ver.0.10）
 2022/07/19 [体験版]（ver.0.11）
 2022/07/21 [体験版]（ver.0.12）
+2022/08/04 [体験版]（ver.0.13）
 
 ━━━━━━━━━━━━━━━━━━━━
 ■クレジット
@@ -135,6 +150,12 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒製作者:CLOSET 様
   Web :http://eurs.blog65.fc2.com/
+  
+【戦闘アニメーション素材】
+
+⇒製作者:藤宮翔流 様
+  Web :http://game-hikidashi.com/
+・エフェクトフリー素材２（ツクルミネンス）
 
 【フォント】
 
@@ -145,7 +166,8 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 【プラグイン】
 
 ⇒制作者:Moghunter 様
-・MOG Battle Hud 
+・MOG - Battle Commands
+・MOG - Battle Hud 
 ・MOG - Battle Result 
 ・MOG - Scene Equip
 ・MOG - Scene File 
@@ -179,11 +201,13 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・SubstituteExtend
 
 ⇒制作者:Yana 様
+・BeforeCommon
 ・CommonPopupCore
 ・GetInformation
 ・ItemStorage
 ・PassiveSkill
 ・StackBattleLog
+
 
 ⇒制作者:ルルの協会 様
   Web :https://nine-yusha.com/
@@ -211,6 +235,10 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒制作者:フトコロ 様
 ・FTKR_MessageWindowLines
 ・FTKR_SkillTreeSystem
+
+⇒制作者:村人C 様
+・Reapeat_Skill
+・Times_Skill
 
 ⇒制作者:cellicom 様
 ・cellicom_RarityItemColor
@@ -256,5 +284,11 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒制作者:Lunatlazur 様
 ・Lunatlazur_ActorNameWindow
 
-⇒制作者:村人C 様
-・Reapeat_Skill
+⇒制作者:こま 様
+・SetActorHome
+
+⇒制作者:茶の助 様
+・TYA_EnemyHPGauge
+
+⇒制作者:DarkPlasma 様
+・DarkPlasma_AddElementToSkillType
