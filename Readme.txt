@@ -238,7 +238,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:村人C 様
 ・Reapeat_Skill
-・Times_Skill
 
 ⇒制作者:cellicom 様
 ・cellicom_RarityItemColor
@@ -292,3 +291,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:DarkPlasma 様
 ・DarkPlasma_AddElementToSkillType
+
+⇒制作者:yamachan 様
+・RTK_ActionLimit
+
