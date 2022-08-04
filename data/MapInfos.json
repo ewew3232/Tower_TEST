@@ -2,7 +2,7 @@
 null,
 {"id":1,"expanded":false,"name":"始まりの町","order":93,"parentId":0,"scrollX":1104,"scrollY":453},
 {"id":2,"expanded":false,"name":"5層","order":17,"parentId":8,"scrollX":832,"scrollY":640},
-{"id":3,"expanded":false,"name":"オープニング","order":1,"parentId":0,"scrollX":650,"scrollY":461},
+{"id":3,"expanded":false,"name":"オープニング","order":1,"parentId":0,"scrollX":780,"scrollY":553.1999999999999},
 {"id":4,"expanded":true,"name":"塔","order":9,"parentId":0,"scrollX":770.4,"scrollY":886.8},
 {"id":5,"expanded":false,"name":"1-9層MAP3","order":14,"parentId":8,"scrollX":980,"scrollY":656},
 {"id":6,"expanded":false,"name":"宿屋","order":103,"parentId":29,"scrollX":650,"scrollY":461},
