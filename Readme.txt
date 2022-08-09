@@ -84,6 +84,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 2022/07/19 [体験版]（ver.0.11）
 2022/07/21 [体験版]（ver.0.12）
 2022/08/04 [体験版]（ver.0.13）
+2022/08/09 [体験版]（ver.0.14）
 
 ━━━━━━━━━━━━━━━━━━━━
 ■クレジット
@@ -169,12 +170,12 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・MOG - Battle Commands
 ・MOG - Battle Hud 
 ・MOG - Battle Result 
-・MOG - Scene Equip
+//・MOG - Scene Equip
 ・MOG - Scene File 
-・MOG - Scene Item
+//・MOG - Scene Item
 ・MOG - Scene Menu
-・MOG - Scene Skill
-・MOG - Scene Status
+//・MOG - Scene Skill
+//・MOG - Scene Status
 ・MOG - Title Picture Commands 
 ・MOG - Title Particles 
 
@@ -200,6 +201,16 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・SceneGlossary
 ・SubstituteExtend
 
+⇒制作者:ルルの協会 様
+  Web :https://nine-yusha.com/
+・LL_InfoPopupWIndowMV
+・LL_MenuScreenBaseMV
+・LL_MenuScreenShopMV
+・LL_MenuScreenStatusMV
+・LL_SprashScreenMV
+・LL_StandingPictureMV
+・LL_StandingPictureBattleMV
+
 ⇒制作者:Yana 様
 ・BeforeCommon
 ・CommonPopupCore
@@ -207,15 +218,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・ItemStorage
 ・PassiveSkill
 ・StackBattleLog
-
-
-⇒制作者:ルルの協会 様
-  Web :https://nine-yusha.com/
-・LL_MenuScreenBaseMV
-・LL_MenuScreenShopMV
-・LL_SprashScreenMV
-・LL_StandingPictureMV
-・LL_StandingPictureBattleMV
 
 ⇒制作者:砂川赳 様
   Web :https://newrpg.seesaa.net/
@@ -295,3 +297,5 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒制作者:yamachan 様
 ・RTK_ActionLimit
 
+⇒制作者:蔦森くいな 様
+・HideItemNumber
