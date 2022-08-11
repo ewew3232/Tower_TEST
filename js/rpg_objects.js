@@ -1430,7 +1430,7 @@ Game_Action.prototype.isValid = function() {
 
 Game_Action.prototype.speed = function() {
     var agi = this.subject().agi;
-    var speed = agi + Math.randomInt(Math.floor(5 + agi / 4));
+    var speed = agi// + Math.randomInt(Math.floor(5 + agi / 4));//素早さ固定
     if (this.item()) {
         speed += this.item().speed;
     }

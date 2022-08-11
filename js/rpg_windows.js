@@ -2263,7 +2263,7 @@ Window_EquipStatus.prototype.windowWidth = function() {
 };
 
 Window_EquipStatus.prototype.windowHeight = function() {
-    return this.fittingHeight(this.numVisibleRows());
+    return 360//this.fittingHeight(this.numVisibleRows());
 };
 
 Window_EquipStatus.prototype.numVisibleRows = function() {
