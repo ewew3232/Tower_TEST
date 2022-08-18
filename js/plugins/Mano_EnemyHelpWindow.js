@@ -183,7 +183,7 @@ Scene_Boot.prototype.start =function(){
 
 class Window_EenmyHelp extends Window_Selectable{
     constructor(x,y,w,h){
-        super(x,y,240,120);
+        super(x,y,320,120);//ここ
         
         this.move(x,y,w,this.fittingHeight(2));
         this._textCache =[];
@@ -204,7 +204,7 @@ class Window_EenmyHelp extends Window_Selectable{
         return this._batller;
     }
     windowWidth(){
-        return 240;
+        return 320;//ここ
     }
     windowHeight(){
         return this.fittingHeight(2);

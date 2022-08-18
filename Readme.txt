@@ -26,6 +26,12 @@
 メニュー ：Xキー、Escキー、テンキー0、二本指タップ
 ダッシュ ：Shiftを押しながら移動ボタン *注1
 
+メッセージスキップ:Sキー
+メッセージオート:Aキー
+
+戦闘高速化:Zキー長押し,タップ長押し
+イベント高速化:Zキー長押し,タップ長押し
+
 F4キー ：全画面モード切替
 F5キー ：リロード(再起動してタイトルへ)
 
@@ -85,6 +91,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 2022/07/21 [体験版]（ver.0.12）
 2022/08/04 [体験版]（ver.0.13）
 2022/08/09 [体験版]（ver.0.14）
+2022/08/18 [体験版]（ver.0.15）
 
 ━━━━━━━━━━━━━━━━━━━━
 ■クレジット
@@ -198,8 +205,10 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・BattleRecord
 ・CounterExtend
 ・MapNameExtend
+・MessageSkip
 ・SceneGlossary
 ・SubstituteExtend
+
 
 ⇒制作者:ルルの協会 様
   Web :https://nine-yusha.com/
@@ -210,6 +219,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・LL_SprashScreenMV
 ・LL_StandingPictureMV
 ・LL_StandingPictureBattleMV
+・LL_VariableWindowMV
 
 ⇒制作者:Yana 様
 ・BeforeCommon
@@ -238,6 +248,14 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・FTKR_MessageWindowLines
 ・FTKR_SkillTreeSystem
 
+⇒制作者:Hime 様
+・HIME_WindowBackgroundColors
+・Mano_EnemyHelpWindow
+
+⇒制作者:蔦森くいな 様
+・HideItemNumber
+・EventInformation
+
 ⇒制作者:村人C 様
 ・Reapeat_Skill
 
@@ -249,9 +267,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:Zalerinian 様
 ・Gamefocus
-
-⇒制作者:Hime 様
-・HIME_WindowBackgroundColors
 
 ⇒制作者:くらげや 様
 ・KURAGE_SemiAutoDungeon
@@ -297,5 +312,11 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒制作者:yamachan 様
 ・RTK_ActionLimit
 
-⇒制作者:蔦森くいな 様
-・HideItemNumber
+⇒制作者:みこと 様
+・Escape100
+
+⇒制作者:くらむぼん 様
+・TimeEvent
+
+⇒制作者:奏ねこま 様
+・MPI_MapPicture
