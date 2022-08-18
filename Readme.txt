@@ -254,7 +254,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:蔦森くいな 様
 ・HideItemNumber
-・EventInformation
 
 ⇒制作者:村人C 様
 ・Reapeat_Skill

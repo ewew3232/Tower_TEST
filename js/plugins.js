@@ -82,6 +82,5 @@ var $plugins =
 {"name":"HIME_EnemyReinforcements","status":true,"description":"Allows you to summon more enemies into the current battle\r\nusing event commands.","parameters":{}},
 {"name":"LL_VariableWindowMV","status":true,"description":"変数を画面にウィンドウで表示します。","parameters":{}},
 {"name":"TimeEvent","status":true,"description":"時間の経過に応じてイベントを起こします。","parameters":{}},
-{"name":"EventInformation","status":true,"description":"v1.1.1 イベントの頭上に文字を表示したい時に使います","parameters":{}},
 {"name":"MPI_MapPicture","status":true,"description":"マップ座標基準でピクチャを表示します。","parameters":{"重なり判定-A":"true","重なり判定-B":"true","重なり判定-C":"true","判定周期":"4","不透明度":"64","変化量":"16"}}
 ];
