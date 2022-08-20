@@ -64,10 +64,9 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ────────────────────
 
-その他不明な点がありましたら、下記ページをご覧ください。
+その他不明な点がありましたら、下記のツイッターアカウントにご連絡ください。
 
-よくあるご質問・お問い合わせ
-メールアドレスなど
+TwitterID: @ONJ_kakikaki
 
 ━━━━━━━━━━━━━━━━━━━━
 ■著作権について
@@ -92,6 +91,7 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 2022/08/04 [体験版]（ver.0.13）
 2022/08/09 [体験版]（ver.0.14）
 2022/08/18 [体験版]（ver.0.15）
+2022/08/20 [体験版]（ver.0.20）
 
 ━━━━━━━━━━━━━━━━━━━━
 ■クレジット
@@ -240,13 +240,13 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ・Torigoya_FrameTween
 ・Torigoya_SkillCutIN
 
-⇒制作者:ヱビ 様
-・AB_EnemyBook
-・AB_EquipUpgrade
-
 ⇒制作者:フトコロ 様
 ・FTKR_MessageWindowLines
 ・FTKR_SkillTreeSystem
+
+⇒制作者:ヱビ 様
+・AB_EnemyBook
+・AB_EquipUpgrade
 
 ⇒制作者:Hime 様
 ・HIME_WindowBackgroundColors

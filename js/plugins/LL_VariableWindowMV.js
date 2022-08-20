@@ -265,6 +265,7 @@
             }
 
             this.contents.clear();
+            this.contents.fontSize = 20;
             this.changeTextColor(this.systemColor());
             this.drawText($dataSystem.variables[this.getVariableId()], 0, 0, this.labelWidth());
             this.resetTextColor();

@@ -5170,6 +5170,7 @@ Game_Party.prototype.rateSurprise = function(troopAgi) {
 Game_Party.prototype.performVictory = function() {
     this.members().forEach(function(actor) {
         actor.performVictory();
+        actor.recoverAll();
     });
 };
 
