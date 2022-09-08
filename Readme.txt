@@ -122,6 +122,12 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 ⇒製作者:空維深夜 様
 ・プレミアム素材セット vol.2
 
+【効果音素材】
+
+⇒製作者:魔王魂 様
+
+⇒製作者:OtoLogic 様
+
 【マップ素材】
 
 ⇒制作者:​HanapapaStudio 様
@@ -250,7 +256,9 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:Hime 様
 ・HIME_WindowBackgroundColors
+・HIME_SideviewActorEnemies
 ・Mano_EnemyHelpWindow
+
 
 ⇒制作者:蔦森くいな 様
 ・HideItemNumber
@@ -319,3 +327,6 @@ Webサイト:https://ci-en.dlsite.com/creator/11451
 
 ⇒制作者:奏ねこま 様
 ・MPI_MapPicture
+
+⇒制作者:tomoaky 様
+・TMGreedShop
